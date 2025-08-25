@@ -1,0 +1,109 @@
+<mvc:View
+  controllerName="quality.controller.Home"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  xmlns:layout="sap.ui.layout"
+  xmlns:f="sap.f"
+  displayBlock="true">
+
+  <Page showHeader="false" class="home-page">
+    <!-- Custom Fixed Navbar -->
+    <VBox class="custom-navbar">
+      <HBox class="navbar-content">
+        <HBox class="navbar-left">
+          <Image src="./images/logo.png" width="40px" class="nav-logo"/>
+          <Text text="Quality Management System" class="navbar-title"/>
+        </HBox>
+        <HBox class="navbar-right">
+          <Button 
+            text="Logout"
+            press="onLogout"
+            class="navbar-logout-btn"/>
+        </HBox>
+      </HBox>
+    </VBox>
+
+    <content>
+      <layout:VerticalLayout class="home-container">
+        <Label text="Welcome to Quality Portal" class="welcome-title"/>
+        <Label text="Select an option to continue your quality management tasks" class="welcome-subtitle"/>
+        
+        <!-- Top Row: Inspection and Records -->
+        <layout:HorizontalLayout class="cards-container top-row">
+          <!-- Inspection Card -->
+          <f:Card class="feature-card inspection-card">
+            <f:header>
+              <Bar class="card-header">
+                <contentMiddle>
+                  <core:Icon src="sap-icon://quality-issue" class="card-header-icon"/>
+                  <Title text="Quality Inspection" class="card-title"/>
+                </contentMiddle>
+              </Bar>
+            </f:header>
+            <f:content>
+              <layout:VerticalLayout class="card-content">
+                <core:Icon src="sap-icon://quality-issue" size="3.5rem" class="card-icon inspection-icon"/>
+                <Label text="Manage and conduct quality inspections, audits, and compliance checks" class="card-description"/>
+                <Button 
+                  text="Start Inspection"
+                  type="Emphasized"
+                  press="onInspection"
+                  class="card-button inspection-btn"/>
+              </layout:VerticalLayout>
+            </f:content>
+          </f:Card>
+
+          <!-- Record Card -->
+          <f:Card class="feature-card record-card">
+            <f:header>
+              <Bar class="card-header">
+                <contentMiddle>
+                  <core:Icon src="sap-icon://documents" class="card-header-icon"/>
+                  <Title text="Quality Records" class="card-title"/>
+                </contentMiddle>
+              </Bar>
+            </f:header>
+            <f:content>
+              <layout:VerticalLayout class="card-content">
+                <core:Icon src="sap-icon://documents" size="3.5rem" class="card-icon record-icon"/>
+                <Label text="Access, manage, and review quality documentation and records" class="card-description"/>
+                <Button 
+                  text="View Records"
+                  type="Emphasized"
+                  press="onRecord"
+                  class="card-button record-btn"/>
+              </layout:VerticalLayout>
+            </f:content>
+          </f:Card>
+        </layout:HorizontalLayout>
+
+        <!-- Bottom Row: Usage Analytics (Centered) -->
+        <layout:HorizontalLayout class="cards-container bottom-row">
+          <!-- Usage Card -->
+          <f:Card class="feature-card usage-card">
+            <f:header>
+              <Bar class="card-header">
+                <contentMiddle>
+                  <core:Icon src="sap-icon://business-objects-experience" class="card-header-icon"/>
+                  <Title text="System Analytics" class="card-title"/>
+                </contentMiddle>
+              </Bar>
+            </f:header>
+            <f:content>
+              <layout:VerticalLayout class="card-content">
+                <core:Icon src="sap-icon://business-objects-experience" size="3.5rem" class="card-icon usage-icon"/>
+                <Label text="Monitor system usage, performance metrics, and analytics reports" class="card-description"/>
+                <Button 
+                  text="Check Analytics"
+                  type="Emphasized"
+                  press="onUsage"
+                  class="card-button usage-btn"/>
+              </layout:VerticalLayout>
+            </f:content>
+          </f:Card>
+        </layout:HorizontalLayout>
+      </layout:VerticalLayout>
+    </content>
+  </Page>
+</mvc:View>

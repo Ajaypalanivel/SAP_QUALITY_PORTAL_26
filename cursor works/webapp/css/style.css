@@ -1,0 +1,2158 @@
+/* ===================================
+   Light Professional Login Page Styles
+   =================================== */
+.login-page {
+    background: linear-gradient(135deg, #f0f4f8 0%, #e6eef7 100%);
+    height: 100vh;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.login-card {
+    background: #f8fafc;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem 3rem 2rem 3rem;
+    width: 420px;
+    max-width: 85%;
+    text-align: center;
+    position: relative;
+    border: 1px solid #e1e8f0;
+    margin: 0 auto;
+    flex-shrink: 0;
+    min-height: auto;
+    max-height: 600px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.logo-container {
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-logo {
+    margin: 0 auto 1rem;
+    align-self: center;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
+    background: #f0f7ff;
+    padding: 12px;
+}
+
+.portal-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2563eb;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.welcome-text {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+.subtitle-text {
+    font-size: 1.05rem;
+    color: #64748b;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.login-form {
+    width: 100%;
+    gap: 0.5rem;
+    margin: 1rem 0 0.5rem 0;
+    box-sizing: border-box;
+}
+
+.input-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #374151;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    padding-left: 0.2rem;
+}
+
+.input-container {
+    position: relative;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    border-radius: 12px;
+    padding: 0.75rem 1.25rem;
+    transition: all 0.25s ease;
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+}
+
+.input-container:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+    background: #f8fafc;
+    transform: translateY(-2px);
+}
+
+.input-icon {
+    color: #2563eb !important;
+    font-size: 1.3rem !important;
+    margin-right: 1rem;
+    min-width: 24px;
+    display: block !important;
+    visibility: visible !important;
+}
+
+.login-input {
+    border: none !important;
+    height: 2.4rem;
+    padding: 0;
+    font-size: 1rem;
+    flex-grow: 1;
+    color: #1f2937;
+    background: transparent !important;
+    box-shadow: none !important;
+    font-weight: 500;
+}
+
+.login-input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.login-input::placeholder {
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+/* Remove UI5 Input Field Borders */
+.login-input .sapMInputBaseContentWrapper {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.login-input .sapMInputBaseContentWrapper:focus {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.login-input .sapMInputBaseContentWrapper:hover {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.login-input .sapMInputBaseInner {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.login-input .sapMInputBaseInner:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+.login-input .sapMInputBaseInner:hover {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+.login-input .sapMInputBaseContentWrapper:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Remove ALL inner UI5 borders and focus states */
+.login-input .sapMInputBaseContentWrapper *,
+.login-input .sapMInputBaseInner * {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Ensure no borders appear on any UI5 input elements */
+.login-input .sapMInputBaseContentWrapper,
+.login-input .sapMInputBaseInner,
+.login-input .sapMInputBaseContentWrapper *,
+.login-input .sapMInputBaseInner * {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+/* Prevent scrollbars */
+.login-page .sapMPageContent,
+.login-page .sapMScrollCont {
+    overflow: hidden !important;
+    scrollbar-width: none !important;
+}
+
+.login-page .sapMScrollCont::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* Enhanced Sign-In Button Styling */
+.login-button {
+    height: 3.6rem;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.15rem;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    border: none;
+    margin-top: 1.5rem;
+    color: white;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.25);
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.login-button:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+}
+
+.login-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+}
+
+/* Button shine effect */
+.login-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: left 0.5s;
+}
+
+.login-button:hover::before {
+    left: 100%;
+}
+
+.footer {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #f1f5f9;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    color: #64748b;
+    font-weight: 400;
+}
+
+/* =============================
+   Responsive adjustments
+   ============================= */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 2.5rem 2rem;
+        width: 90%;
+        max-width: 90%;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+    
+    .welcome-text {
+        font-size: 1.8rem;
+    }
+    
+    .subtitle-text {
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .login-input {
+        height: 2.2rem;
+    }
+    
+    .login-button {
+        height: 3.3rem;
+        font-size: 1.1rem;
+    }
+    
+    .input-container {
+        padding: 0.7rem 1rem;
+    }
+}
+
+/* =============================
+   Animation effects
+   ============================= */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.login-card {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.input-container {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.login-button {
+    animation: fadeIn 1s ease-out;
+}
+
+/* =============================
+   Force icon visibility
+   ============================= */
+.sapUiIcon {
+    color: #2563eb !important;
+    font-size: 1.3rem !important;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+.coreIcon {
+    color: #2563eb !important;
+    display: block !important;
+    visibility: visible !important;
+}
+
+/* ===================================
+   Enhanced Professional Home Page Styles
+   =================================== */
+.home-page {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+.home-page .sapMPage {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+    margin-top: 0 !important;
+}
+
+.home-page .sapMPageContent {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Custom Fixed Navbar - Clean and Simple */
+.custom-navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    background: white !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1) !important;
+    height: 90px !important;
+    min-height: 90px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.navbar-content {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 100% !important;
+    padding: 0 2rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.nav-logo {
+    margin-right: 1rem !important;
+    border-radius: 8px !important;
+    flex-shrink: 0 !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.navbar-title {
+    color: #1e293b !important;
+    font-weight: 800 !important;
+    font-size: 1.8rem !important;
+    margin: 0 !important;
+    text-align: left !important;
+    flex: 0 0 auto !important;
+    padding-left: 0 !important;
+    white-space: nowrap !important;
+    margin-left: 0 !important;
+}
+
+/* Left side container for logo and title */
+.navbar-left {
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+}
+
+/* Right side container for logout button */
+.navbar-right {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    flex-shrink: 0 !important;
+}
+
+/* New Logout Button - Matches Start Inspection Button */
+.navbar-logout-btn {
+    color: white !important;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    padding: 0.8rem 1.5rem !important;
+    min-width: 120px !important;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25) !important;
+    transition: all 0.3s ease !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    font-size: 0.95rem !important;
+    height: 48px !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+    visibility: visible !important;
+    margin-left: auto !important;
+}
+
+/* Remove ALL UI5 Button Borders and Styling - Comprehensive Override */
+.navbar-logout-btn .sapMBtnInner,
+.navbar-logout-btn .sapMBtnInner:focus,
+.navbar-logout-btn .sapMBtnInner:hover,
+.navbar-logout-btn .sapMBtnInner:active {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-radius: 10px !important;
+}
+
+.navbar-logout-btn .sapMBtnContent,
+.navbar-logout-btn .sapMBtnContent:focus,
+.navbar-logout-btn .sapMBtnContent:hover,
+.navbar-logout-btn .sapMBtnContent:active {
+    color: white !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.navbar-logout-btn .sapMBtn,
+.navbar-logout-btn .sapMBtn:focus,
+.navbar-logout-btn .sapMBtn:hover,
+.navbar-logout-btn .sapMBtn:active {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-radius: 10px !important;
+}
+
+.navbar-logout-btn .sapMBtn:focus .sapMBtnInner,
+.navbar-logout-btn .sapMBtn:hover .sapMBtnInner,
+.navbar-logout-btn .sapMBtn:active .sapMBtnInner {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+.navbar-logout-btn:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%) !important;
+    color: white !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35) !important;
+}
+
+.navbar-logout-btn:active {
+    transform: translateY(0) !important;
+}
+
+/* Main Content - Proper spacing for fixed navbar */
+.home-container {
+    padding: 2.5rem 2rem !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 90px !important;
+    padding-top: 2rem !important;
+    box-sizing: border-box !important;
+}
+
+/* Enhanced Cards Container */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.top-row {
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.bottom-row {
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/* Welcome Title Styles */
+.welcome-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.welcome-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Professional Card Design - Reduced Size */
+.feature-card {
+    width: 320px;
+    min-height: 320px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: all 0.3s ease;
+    background: white;
+    overflow: hidden;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Header */
+.card-header {
+    background: transparent !important;
+    border-bottom: 2px solid #e2e8f0;
+    padding: 1.2rem;
+}
+
+.card-header-icon {
+    color: #2563eb;
+    font-size: 1.3rem;
+    margin-right: 0.8rem;
+}
+
+.card-title {
+    color: #1e293b !important;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Card Content - Reduced Padding */
+.card-content {
+    padding: 1.8rem 1.5rem;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.card-icon {
+    margin-bottom: 0.8rem;
+    padding: 1.2rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 100%);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.12);
+}
+
+.inspection-icon { color: #2563eb; }
+.record-icon { color: #10b981; }
+.usage-icon { color: #8b5cf6; }
+
+.card-description {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Enhanced Card Buttons */
+.card-button {
+    height: 3rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    margin-top: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    min-width: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.inspection-btn {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+.record-btn {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.usage-btn {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+.card-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-button:active {
+    transform: translateY(0);
+}
+
+/* Button shine effect */
+.card-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transition: left 0.7s;
+}
+
+.card-button:hover::before {
+    left: 100%;
+}
+
+/* =============================
+   Responsive adjustments
+   ============================= */
+@media (max-width: 1024px) {
+    .cards-container {
+        gap: 1.8rem;
+    }
+    
+    .feature-card {
+        width: 300px;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-bar {
+        padding: 0 1.5rem;
+    }
+    
+    .header-title {
+        font-size: 1.3rem;
+    }
+    
+    .nav-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .home-container {
+        padding: 2rem 1.5rem;
+    }
+    
+    .welcome-title {
+        font-size: 2rem;
+    }
+    
+    .welcome-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .cards-container {
+        gap: 1.5rem;
+    }
+    
+    .feature-card {
+        width: 100%;
+        max-width: 350px;
+        min-height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-bar {
+        padding: 0 1rem;
+    }
+    
+    .header-title {
+        font-size: 1.2rem;
+    }
+    
+    .nav-subtitle {
+        display: none;
+    }
+    
+    .logout-btn {
+        min-width: 80px;
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .home-container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .welcome-title {
+        font-size: 1.8rem;
+    }
+    
+    .card-content {
+        padding: 1.5rem 1rem;
+        gap: 1.2rem;
+    }
+    
+    .card-icon {
+        padding: 1rem;
+        font-size: 3rem;
+    }
+}
+
+/* =============================
+   Animation effects
+   ============================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feature-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.feature-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.feature-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* ===================================
+   Professional Inspection Page Styles
+   =================================== */
+
+/* Inspection Page Background */
+.inspection-page {
+    background: #f8fafc !important;
+    min-height: 100vh;
+}
+
+/* Enhanced Page Header */
+.inspection-page .sapMPage {
+    background: #f8fafc !important;
+}
+
+.inspection-page .sapMPageHeader {
+    background: white !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
+    padding: 1rem 0 !important;
+    margin-bottom: 1rem !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    height: 70px !important;
+}
+
+.inspection-page .sapMPageTitle {
+    color: #1e293b !important;
+    font-weight: 700 !important;
+    font-size: 1.8rem !important;
+    text-shadow: none !important;
+    letter-spacing: -0.5px !important;
+}
+
+.inspection-page .sapMBtn {
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.inspection-page .sapMBtn:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Enhanced Search and Filter Toolbar */
+.inspection-page .sapMTB {
+    background: white !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    margin: 90px 0 1.5rem 0 !important;
+    padding: 1.5rem !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    position: relative !important;
+    z-index: 1 !important;
+    clear: both !important;
+    display: flex !important;
+    width: calc(100% - 3rem) !important;
+    max-width: 100% !important;
+    min-height: 80px !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.inspection-page .sapMSF {
+    border-radius: 8px !important;
+    border: 2px solid #e2e8f0 !important;
+    transition: all 0.3s ease !important;
+    margin-right: 2rem !important;
+    width: 100% !important;
+    max-width: 450px !important;
+    flex: 1 !important;
+}
+
+.inspection-page .sapMSF:focus-within {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+}
+
+.inspection-page .sapMSF .sapMSFF {
+    border-radius: 8px !important;
+    background: #f8fafc !important;
+    width: 100% !important;
+}
+
+.inspection-page .sapMSF .sapMSFI {
+    color: #1e293b !important;
+    font-weight: 500 !important;
+    width: 100% !important;
+}
+
+.inspection-page .sapMSF .sapMSFI::placeholder {
+    color: #94a3b8 !important;
+    font-weight: 400 !important;
+}
+
+/* Enhanced Filter Select */
+.inspection-page .sapMSlt {
+    border-radius: 8px !important;
+    border: 2px solid #e2e8f0 !important;
+    background: white !important;
+    transition: all 0.3s ease !important;
+    min-width: 180px !important;
+    margin-left: 0 !important;
+    flex-shrink: 0 !important;
+    height: 44px !important;
+}
+
+.inspection-page .sapMSlt:hover {
+    border-color: #cbd5e1 !important;
+}
+
+.inspection-page .sapMSlt:focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+}
+
+.inspection-page .sapMSlt .sapMSltLabel {
+    color: #1e293b !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+}
+
+.inspection-page .sapMSlt .sapMSltArrow {
+    color: #64748b !important;
+}
+
+/* Filter Label Styling */
+.inspection-page .sapMLabel {
+    color: #374151 !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    margin-right: 0.8rem !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+}
+
+/* Enhanced Table Styling */
+.inspection-page .sapMScrollCont {
+    border-radius: 12px !important;
+    border: 1px solid #e2e8f0 !important;
+    background: white !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    margin: 1.5rem 0 !important;
+    width: calc(100% - 3rem) !important;
+    max-width: 100% !important;
+}
+
+.inspection-page .sapMTable {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    width: 100% !important;
+}
+
+/* Professional Table Headers */
+.inspection-page .sapMTableTHead {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 100 !important;
+}
+
+.inspection-page .sapMTableTHead .sapMColumnHeader {
+    background: transparent !important;
+    border-right: 1px solid #e2e8f0 !important;
+    padding: 1rem 0.75rem !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 100 !important;
+}
+
+.inspection-page .sapMTableTHead .sapMText {
+    color: #1e293b !important;
+    font-weight: 700 !important;
+    font-size: 0.9rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    text-shadow: none !important;
+}
+
+/* Table Body Styling */
+.inspection-page .sapMTableTBody {
+    background: white !important;
+}
+
+.inspection-page .sapMTableTBody .sapMListTblRow {
+    border-bottom: 1px solid #f1f5f9 !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.inspection-page .sapMTableTBody .sapMListTblRow:hover {
+    background: #f8fafc !important;
+}
+
+.inspection-page .sapMTableTBody .sapMListTblCell {
+    padding: 1rem 0.75rem !important;
+    border-right: 1px solid #f1f5f9 !important;
+}
+
+.inspection-page .sapMTableTBody .sapMText {
+    color: #374151 !important;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+}
+
+/* Enhanced Pagination Toolbar */
+.inspection-page .pagination-toolbar {
+    background: white !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    margin: 1.5rem 0 !important;
+    padding: 1rem !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    width: calc(100% - 3rem) !important;
+    max-width: 100% !important;
+}
+
+/* Professional Pagination Buttons */
+.inspection-page .pagination-btn {
+    background: white !important;
+    border: 2px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    color: #64748b !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    padding: 0.6rem 1rem !important;
+    min-width: 44px !important;
+    height: 44px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+.inspection-page .pagination-btn:hover {
+    background: #f8fafc !important;
+    border-color: #cbd5e1 !important;
+    color: #374151 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+}
+
+.inspection-page .pagination-btn:active {
+    transform: translateY(0) !important;
+}
+
+.inspection-page .pagination-btn:focus {
+    outline: none !important;
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+}
+
+/* Active/Current Page Button */
+.inspection-page .pagination-btn.active {
+    background: #2563eb !important;
+    border-color: #2563eb !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25) !important;
+}
+
+.inspection-page .pagination-btn.active:hover {
+    background: #1d4ed8 !important;
+    border-color: #1d4ed8 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3) !important;
+}
+
+/* Page Info Text */
+.inspection-page .page-info {
+    color: #64748b !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    margin: 0 1rem !important;
+    padding: 0.5rem 1rem !important;
+    background: #f8fafc !important;
+    border-radius: 6px !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+/* Custom Scrollbar Styling */
+.inspection-page .sapMScrollCont::-webkit-scrollbar {
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.inspection-page .sapMScrollCont::-webkit-scrollbar-track {
+    background: #f1f5f9 !important;
+    border-radius: 6px !important;
+}
+
+.inspection-page .sapMScrollCont::-webkit-scrollbar-thumb {
+    background: #cbd5e1 !important;
+    border-radius: 6px !important;
+    border: 2px solid #f1f5f9 !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.inspection-page .sapMScrollCont::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8 !important;
+}
+
+.inspection-page .sapMScrollCont::-webkit-scrollbar-corner {
+    background: #f1f5f9 !important;
+}
+
+/* Firefox Scrollbar */
+.inspection-page .sapMScrollCont {
+    scrollbar-width: thin !important;
+    scrollbar-color: #cbd5e1 #f1f5f9 !important;
+}
+
+/* Enhanced Spacing and Layout */
+.inspection-page .sapMVBox {
+    padding: 0 1.5rem 1.5rem 1.5rem !important;
+    gap: 1.5rem !important;
+    margin-top: 0 !important;
+    position: relative !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.inspection-page .sapMPageContent {
+    padding-top: 0 !important;
+    margin-top: 70px !important;
+}
+
+.inspection-page .sapMToolbarSpacer {
+    width: 2rem !important;
+    flex-shrink: 0 !important;
+}
+
+/* Fix toolbar layout */
+.inspection-page .sapMTB .sapMBarChild {
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+}
+
+.inspection-page .sapMTB .sapMSF {
+    flex: 1 !important;
+    max-width: 450px !important;
+    margin-right: 2rem !important;
+}
+
+.inspection-page .sapMTB .sapMSlt {
+    flex-shrink: 0 !important;
+    min-width: 180px !important;
+}
+
+/* Ensure filter section is properly spaced */
+.inspection-page .sapMTB .sapMLabel {
+    margin-right: 0.8rem !important;
+    margin-left: 0 !important;
+}
+
+/* Responsive adjustments for filter section */
+@media (max-width: 1024px) {
+    .inspection-page .sapMTB {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 1rem !important;
+        min-height: auto !important;
+        padding: 1.5rem !important;
+    }
+    
+    .inspection-page .sapMTB .sapMSF {
+        max-width: 100% !important;
+        margin-right: 0 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .inspection-page .sapMTB .sapMSlt {
+        min-width: 200px !important;
+        align-self: flex-start !important;
+    }
+    
+    .inspection-page .sapMTB .sapMLabel {
+        margin-bottom: 0.5rem !important;
+    }
+}
+
+/* Remove duplicate navbar */
+.inspection-page .sapMIBar.sapMHeader-CTX:not(.sapMPageHeader) {
+    display: none !important;
+}
+
+/* Ensure proper content flow */
+.inspection-page .sapMPageContent > .sapMScrollCont {
+    margin-top: 0 !important;
+}
+
+/* Fix toolbar layout */
+.inspection-page .sapMTB .sapMBarChild {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.inspection-page .sapMTB .sapMSF {
+    flex: 1 !important;
+    max-width: 400px !important;
+}
+
+.inspection-page .sapMTB .sapMSlt {
+    flex-shrink: 0 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .inspection-page .sapMVBox {
+        padding: 0 1rem 1rem 1rem !important;
+        gap: 1rem !important;
+    }
+    
+    .inspection-page .sapMTB {
+        margin: 90px 0 1rem 0 !important;
+        padding: 1rem !important;
+        width: calc(100% - 2rem) !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 1rem !important;
+        min-height: auto !important;
+    }
+    
+    .inspection-page .sapMTB .sapMSF {
+        max-width: 100% !important;
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .inspection-page .sapMTB .sapMSlt {
+        min-width: 200px !important;
+        align-self: flex-start !important;
+        margin-left: 0 !important;
+    }
+    
+    .inspection-page .sapMTB .sapMLabel {
+        margin-bottom: 0.5rem !important;
+        margin-right: 0 !important;
+    }
+    
+    .inspection-page .sapMScrollCont {
+        margin: 1rem 0 !important;
+        width: calc(100% - 2rem) !important;
+    }
+    
+    .inspection-page .pagination-toolbar {
+        margin: 1rem 0 !important;
+        padding: 0.8rem !important;
+        flex-wrap: wrap !important;
+        gap: 0.3rem !important;
+        width: calc(100% - 2rem) !important;
+    }
+    
+    .inspection-page .pagination-btn {
+        min-width: 40px !important;
+        height: 40px !important;
+        padding: 0.5rem 0.8rem !important;
+        font-size: 0.85rem !important;
+    }
+    
+    .inspection-page .page-info {
+        margin: 0 0.5rem !important;
+        padding: 0.4rem 0.8rem !important;
+        font-size: 0.85rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .inspection-page .sapMPageTitle {
+        font-size: 1.5rem !important;
+    }
+    
+    .inspection-page .sapMVBox {
+        padding: 0 0.8rem 0.8rem 0.8rem !important;
+        gap: 0.8rem !important;
+    }
+    
+    .inspection-page .sapMTB {
+        margin: 90px 0 0.8rem 0 !important;
+        padding: 0.8rem !important;
+        width: calc(100% - 1.6rem) !important;
+        flex-direction: column !important;
+        gap: 0.8rem !important;
+        align-items: stretch !important;
+    }
+    
+    .inspection-page .sapMTB .sapMSF {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .inspection-page .sapMTB .sapMSlt {
+        min-width: 100% !important;
+        align-self: stretch !important;
+        margin-left: 0 !important;
+    }
+    
+    .inspection-page .sapMTB .sapMLabel {
+        margin-bottom: 0.5rem !important;
+        margin-right: 0 !important;
+        text-align: left !important;
+    }
+    
+    .inspection-page .sapMScrollCont {
+        width: calc(100% - 1.6rem) !important;
+    }
+    
+    .inspection-page .pagination-toolbar {
+        width: calc(100% - 1.6rem) !important;
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+    }
+    
+    .inspection-page .page-info {
+        order: -1 !important;
+        margin: 0 0 0.5rem 0 !important;
+        text-align: center !important;
+    }
+}
+
+/* Animation Effects */
+.inspection-page .sapMTB,
+.inspection-page .sapMScrollCont,
+.inspection-page .pagination-toolbar {
+    animation: fadeInUp 0.6s ease-out !important;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SAPUI5 Specific Overrides for Inspection Page */
+.inspection-page .sapMTableTHead .sapMColumnHeader:last-child {
+    border-right: none !important;
+}
+
+.inspection-page .sapMTableTBody .sapMListTblCell:last-child {
+    border-right: none !important;
+}
+
+.inspection-page .sapMTableTBody .sapMListTblRow:last-child {
+    border-bottom: none !important;
+}
+
+.inspection-page .sapMTableTBody .sapMListTblRow:first-child {
+    border-top: none !important;
+}
+
+/* ===================================
+   Professional Record Page Styles
+   =================================== */
+
+/* Record Page Background */
+.record-page {
+    background: #f8fafc !important;
+    min-height: 100vh;
+}
+
+/* Enhanced Page Header */
+.record-page .sapMPage {
+    background: #f8fafc !important;
+}
+
+.record-page .sapMPageHeader {
+    background: white !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
+    padding: 1rem 0 !important;
+    margin-bottom: 1rem !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    height: 70px !important;
+}
+
+.record-page .sapMPageTitle {
+    color: #1e293b !important;
+    font-weight: 700 !important;
+    font-size: 1.8rem !important;
+    text-shadow: none !important;
+    letter-spacing: -0.5px !important;
+}
+
+.record-page .sapMBtn {
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.record-page .sapMBtn:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Enhanced Search and Filter Toolbar */
+.record-page .sapMTB {
+    background: white !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    margin: 90px 0 1.5rem 0 !important;
+    padding: 1.5rem !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    position: relative !important;
+    z-index: 1 !important;
+    clear: both !important;
+    display: flex !important;
+    width: calc(100% - 3rem) !important;
+    max-width: 100% !important;
+    min-height: 80px !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.record-page .sapMSF {
+    border-radius: 8px !important;
+    border: 2px solid #e2e8f0 !important;
+    transition: all 0.3s ease !important;
+    margin-right: 2rem !important;
+    width: 100% !important;
+    max-width: 450px !important;
+    flex: 1 !important;
+}
+
+.record-page .sapMSF:focus-within {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+}
+
+.record-page .sapMSF .sapMSFF {
+    border-radius: 8px !important;
+    background: #f8fafc !important;
+    width: 100% !important;
+}
+
+.record-page .sapMSF .sapMSFI {
+    color: #1e293b !important;
+    font-weight: 500 !important;
+    width: 100% !important;
+}
+
+.record-page .sapMSF .sapMSFI::placeholder {
+    color: #94a3b8 !important;
+    font-weight: 400 !important;
+}
+
+/* Enhanced Filter Select */
+.record-page .sapMSlt {
+    border-radius: 8px !important;
+    border: 2px solid #e2e8f0 !important;
+    background: white !important;
+    transition: all 0.3s ease !important;
+    min-width: 180px !important;
+    margin-left: 0 !important;
+    flex-shrink: 0 !important;
+    height: 44px !important;
+}
+
+.record-page .sapMSlt:hover {
+    border-color: #cbd5e1 !important;
+}
+
+.record-page .sapMSlt:focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+}
+
+.record-page .sapMSlt .sapMSltLabel {
+    color: #1e293b !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+}
+
+.record-page .sapMSlt .sapMSltArrow {
+    color: #64748b !important;
+}
+
+/* Filter Label Styling */
+.record-page .sapMLabel {
+    color: #374151 !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    margin-right: 0.8rem !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+}
+
+/* Enhanced Table Styling */
+.record-page .sapMScrollCont {
+    border-radius: 12px !important;
+    border: 1px solid #e2e8f0 !important;
+    background: white !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    margin: 1.5rem 0 !important;
+    width: calc(100% - 3rem) !important;
+    max-width: 100% !important;
+}
+
+.record-page .sapMTable {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    width: 100% !important;
+}
+
+/* Professional Table Headers - Sticky */
+.record-page .sapMTableTHead {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 100 !important;
+}
+
+.record-page .sapMTableTHead .sapMColumnHeader {
+    background: transparent !important;
+    border-right: 1px solid #e2e8f0 !important;
+    padding: 1rem 0.75rem !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 100 !important;
+}
+
+.record-page .sapMTableTHead .sapMText {
+    color: #1e293b !important;
+    font-weight: 700 !important;
+    font-size: 0.9rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    text-shadow: none !important;
+}
+
+/* Table Body Styling */
+.record-page .sapMTableTBody {
+    background: white !important;
+}
+
+.record-page .sapMTableTBody .sapMListTblRow {
+    border-bottom: 1px solid #f1f5f9 !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.record-page .sapMTableTBody .sapMListTblRow:hover {
+    background: #f8fafc !important;
+}
+
+.record-page .sapMTableTBody .sapMListTblCell {
+    padding: 1rem 0.75rem !important;
+    border-right: 1px solid #f1f5f9 !important;
+}
+
+.record-page .sapMTableTBody .sapMText {
+    color: #374151 !important;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+}
+
+/* Enhanced Pagination Toolbar */
+.record-page .pagination-toolbar {
+    background: white !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    margin: 1.5rem 0 !important;
+    padding: 1rem !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    width: calc(100% - 3rem) !important;
+    max-width: 100% !important;
+}
+
+/* Professional Pagination Buttons */
+.record-page .pagination-btn {
+    background: white !important;
+    border: 2px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    color: #64748b !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    padding: 0.6rem 1rem !important;
+    min-width: 44px !important;
+    height: 44px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+.record-page .pagination-btn:hover {
+    background: #f8fafc !important;
+    border-color: #cbd5e1 !important;
+    color: #374151 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+}
+
+.record-page .pagination-btn:active {
+    transform: translateY(0) !important;
+}
+
+.record-page .pagination-btn:focus {
+    outline: none !important;
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+}
+
+/* Active/Current Page Button */
+.record-page .pagination-btn.active {
+    background: #2563eb !important;
+    border-color: #2563eb !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25) !important;
+}
+
+.record-page .pagination-btn.active:hover {
+    background: #1d4ed8 !important;
+    border-color: #1d4ed8 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3) !important;
+}
+
+/* Page Info Text */
+.record-page .page-info {
+    color: #64748b !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    margin: 0 1rem !important;
+    padding: 0.5rem 1rem !important;
+    background: #f8fafc !important;
+    border-radius: 6px !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+/* Custom Scrollbar Styling */
+.record-page .sapMScrollCont::-webkit-scrollbar {
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.record-page .sapMScrollCont::-webkit-scrollbar-track {
+    background: #f1f5f9 !important;
+    border-radius: 6px !important;
+}
+
+.record-page .sapMScrollCont::-webkit-scrollbar-thumb {
+    background: #cbd5e1 !important;
+    border-radius: 6px !important;
+    border: 2px solid #f1f5f9 !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.record-page .sapMScrollCont::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8 !important;
+}
+
+.record-page .sapMScrollCont::-webkit-scrollbar-corner {
+    background: #f1f5f9 !important;
+}
+
+/* Firefox Scrollbar */
+.record-page .sapMScrollCont {
+    scrollbar-width: thin !important;
+    scrollbar-color: #cbd5e1 #f1f5f9 !important;
+}
+
+/* Enhanced Spacing and Layout */
+.record-page .sapMVBox {
+    padding: 0 1.5rem 1.5rem 1.5rem !important;
+    gap: 1.5rem !important;
+    margin-top: 0 !important;
+    position: relative !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.record-page .sapMPageContent {
+    padding-top: 0 !important;
+    margin-top: 70px !important;
+}
+
+.record-page .sapMToolbarSpacer {
+    width: 2rem !important;
+    flex-shrink: 0 !important;
+}
+
+/* Fix toolbar layout */
+.record-page .sapMTB .sapMBarChild {
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+}
+
+.record-page .sapMTB .sapMSF {
+    flex: 1 !important;
+    max-width: 450px !important;
+    margin-right: 2rem !important;
+}
+
+.record-page .sapMTB .sapMSlt {
+    flex-shrink: 0 !important;
+    min-width: 180px !important;
+}
+
+/* Ensure filter section is properly spaced */
+.record-page .sapMTB .sapMLabel {
+    margin-right: 0.8rem !important;
+    margin-left: 0 !important;
+}
+
+/* Remove duplicate navbar */
+.record-page .sapMIBar.sapMHeader-CTX:not(.sapMPageHeader) {
+    display: none !important;
+}
+
+/* Ensure proper content flow */
+.record-page .sapMPageContent > .sapMScrollCont {
+    margin-top: 0 !important;
+}
+
+/* SAPUI5 Specific Overrides for Record Page */
+.record-page .sapMTableTHead .sapMColumnHeader:last-child {
+    border-right: none !important;
+}
+
+.record-page .sapMTableTBody .sapMListTblCell:last-child {
+    border-right: none !important;
+}
+
+.record-page .sapMTableTBody .sapMListTblRow:last-child {
+    border-bottom: none !important;
+}
+
+.record-page .sapMTableTBody .sapMListTblRow:first-child {
+    border-top: none !important;
+}
+
+/* ===================================
+   Professional Usage Page Styles
+   =================================== */
+
+/* Usage Page Background */
+.usage-page {
+    background: #f8fafc !important;
+    min-height: 100vh;
+}
+
+/* Enhanced Page Header */
+.usage-page .sapMPage {
+    background: #f8fafc !important;
+}
+
+.usage-page .sapMPageHeader {
+    background: white !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
+    padding: 1rem 0 !important;
+    margin-bottom: 1rem !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    height: 70px !important;
+}
+
+.usage-page .sapMPageTitle {
+    color: #1e293b !important;
+    font-weight: 700 !important;
+    font-size: 1.8rem !important;
+    text-shadow: none !important;
+    letter-spacing: -0.5px !important;
+}
+
+.usage-page .sapMBtn {
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.usage-page .sapMBtn:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Enhanced Search and Filter Toolbar */
+.usage-page .sapMTB {
+    background: white !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    margin: 90px 0 1.5rem 0 !important;
+    padding: 1.5rem !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    position: relative !important;
+    z-index: 1 !important;
+    clear: both !important;
+    display: flex !important;
+    width: calc(100% - 3rem) !important;
+    max-width: 100% !important;
+    min-height: 80px !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.usage-page .sapMSF {
+    border-radius: 8px !important;
+    border: 2px solid #e2e8f0 !important;
+    transition: all 0.3s ease !important;
+    margin-right: 2rem !important;
+    width: 100% !important;
+    max-width: 450px !important;
+    flex: 1 !important;
+}
+
+.usage-page .sapMSF:focus-within {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+}
+
+.usage-page .sapMSF .sapMSFF {
+    border-radius: 8px !important;
+    background: #f8fafc !important;
+    width: 100% !important;
+}
+
+.usage-page .sapMSF .sapMSFI {
+    color: #1e293b !important;
+    font-weight: 500 !important;
+    width: 100% !important;
+}
+
+.usage-page .sapMSF .sapMSFI::placeholder {
+    color: #94a3b8 !important;
+    font-weight: 400 !important;
+}
+
+/* Enhanced Filter Select */
+.usage-page .sapMSlt {
+    border-radius: 8px !important;
+    border: 2px solid #e2e8f0 !important;
+    background: white !important;
+    transition: all 0.3s ease !important;
+    min-width: 180px !important;
+    margin-left: 0 !important;
+    flex-shrink: 0 !important;
+    height: 44px !important;
+}
+
+.usage-page .sapMSlt:hover {
+    border-color: #cbd5e1 !important;
+}
+
+.usage-page .sapMSlt:focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+}
+
+.usage-page .sapMSlt .sapMSltLabel {
+    color: #1e293b !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+}
+
+.usage-page .sapMSlt .sapMSltArrow {
+    color: #64748b !important;
+}
+
+/* Filter Label Styling */
+.usage-page .sapMLabel {
+    color: #374151 !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    margin-right: 0.8rem !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+}
+
+/* Enhanced Table Styling */
+.usage-page .sapMScrollCont {
+    border-radius: 12px !important;
+    border: 1px solid #e2e8f0 !important;
+    background: white !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    margin: 1.5rem 0 !important;
+    width: calc(100% - 3rem) !important;
+    max-width: 100% !important;
+}
+
+.usage-page .sapMTable {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    width: 100% !important;
+}
+
+/* Professional Table Headers - Sticky */
+.usage-page .sapMTableTHead {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 100 !important;
+}
+
+.usage-page .sapMTableTHead .sapMColumnHeader {
+    background: transparent !important;
+    border-right: 1px solid #e2e8f0 !important;
+    padding: 1rem 0.75rem !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 100 !important;
+}
+
+.usage-page .sapMTableTHead .sapMText {
+    color: #1e293b !important;
+    font-weight: 700 !important;
+    font-size: 0.9rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    text-shadow: none !important;
+}
+
+/* Table Body Styling */
+.usage-page .sapMTableTBody {
+    background: white !important;
+}
+
+.usage-page .sapMTableTBody .sapMListTblRow {
+    border-bottom: 1px solid #f1f5f9 !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.usage-page .sapMTableTBody .sapMListTblRow:hover {
+    background: #f8fafc !important;
+}
+
+.usage-page .sapMTableTBody .sapMListTblCell {
+    padding: 1rem 0.75rem !important;
+    border-right: 1px solid #f1f5f9 !important;
+}
+
+.usage-page .sapMTableTBody .sapMText {
+    color: #374151 !important;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+}
+
+/* Enhanced Pagination Toolbar */
+.usage-page .pagination-toolbar {
+    background: white !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    margin: 1.5rem 0 !important;
+    padding: 1rem !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    width: calc(100% - 3rem) !important;
+    max-width: 100% !important;
+}
+
+/* Professional Pagination Buttons */
+.usage-page .pagination-btn {
+    background: white !important;
+    border: 2px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    color: #64748b !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    padding: 0.6rem 1rem !important;
+    min-width: 44px !important;
+    height: 44px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+.usage-page .pagination-btn:hover {
+    background: #f8fafc !important;
+    border-color: #cbd5e1 !important;
+    color: #374151 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+}
+
+.usage-page .pagination-btn:active {
+    transform: translateY(0) !important;
+}
+
+.usage-page .pagination-btn:focus {
+    outline: none !important;
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+}
+
+/* Active/Current Page Button */
+.usage-page .pagination-btn.active {
+    background: #2563eb !important;
+    border-color: #2563eb !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25) !important;
+}
+
+.usage-page .pagination-btn.active:hover {
+    background: #1d4ed8 !important;
+    border-color: #1d4ed8 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3) !important;
+}
+
+/* Page Info Text */
+.usage-page .page-info {
+    color: #64748b !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    margin: 0 1rem !important;
+    padding: 0.5rem 1rem !important;
+    background: #f8fafc !important;
+    border-radius: 6px !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+/* Custom Scrollbar Styling */
+.usage-page .sapMScrollCont::-webkit-scrollbar {
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.usage-page .sapMScrollCont::-webkit-scrollbar-track {
+    background: #f1f5f9 !important;
+    border-radius: 6px !important;
+}
+
+.usage-page .sapMScrollCont::-webkit-scrollbar-thumb {
+    background: #cbd5e1 !important;
+    border-radius: 6px !important;
+    border: 2px solid #f1f5f9 !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.usage-page .sapMScrollCont::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8 !important;
+}
+
+.usage-page .sapMScrollCont::-webkit-scrollbar-corner {
+    background: #f1f5f9 !important;
+}
+
+/* Firefox Scrollbar */
+.usage-page .sapMScrollCont {
+    scrollbar-width: thin !important;
+    scrollbar-color: #cbd5e1 #f1f5f9 !important;
+}
+
+/* Enhanced Spacing and Layout */
+.usage-page .sapMVBox {
+    padding: 0 1.5rem 1.5rem 1.5rem !important;
+    gap: 1.5rem !important;
+    margin-top: 0 !important;
+    position: relative !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.usage-page .sapMPageContent {
+    padding-top: 0 !important;
+    margin-top: 70px !important;
+}
+
+.usage-page .sapMToolbarSpacer {
+    width: 2rem !important;
+    flex-shrink: 0 !important;
+}
+
+/* Fix toolbar layout */
+.usage-page .sapMTB .sapMBarChild {
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+}
+
+.usage-page .sapMTB .sapMSF {
+    flex: 1 !important;
+    max-width: 450px !important;
+    margin-right: 2rem !important;
+}
+
+.usage-page .sapMTB .sapMSlt {
+    flex-shrink: 0 !important;
+    min-width: 180px !important;
+}
+
+/* Ensure filter section is properly spaced */
+.usage-page .sapMTB .sapMLabel {
+    margin-right: 0.8rem !important;
+    margin-left: 0 !important;
+}
+
+/* Remove duplicate navbar */
+.usage-page .sapMIBar.sapMHeader-CTX:not(.sapMPageHeader) {
+    display: none !important;
+}
+
+/* Ensure proper content flow */
+.usage-page .sapMPageContent > .sapMScrollCont {
+    margin-top: 0 !important;
+}
+
+/* SAPUI5 Specific Overrides for Usage Page */
+.usage-page .sapMTableTHead .sapMColumnHeader:last-child {
+    border-right: none !important;
+}
+
+.usage-page .sapMTableTBody .sapMListTblCell:last-child {
+    border-right: none !important;
+}
+
+.usage-page .sapMTableTBody .sapMListTblRow:last-child {
+    border-bottom: none !important;
+}
+
+.usage-page .sapMTableTBody .sapMListTblRow:first-child {
+    border-top: none !important;
+}

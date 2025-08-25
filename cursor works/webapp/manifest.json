@@ -1,0 +1,175 @@
+{
+  "_version": "1.76.0",
+  "sap.app": {
+    "id": "quality",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.18.5",
+      "toolsId": "9bacbc77-0785-4b3b-be0a-d2bf5013b4d5"
+    },
+    "dataSources": {
+      "ZAJ_QUALITY_SB_VAN": {
+        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZAJ_QUALITY_SB_VAN',Version='0001')/$value/",
+        "type": "ODataAnnotation",
+        "settings": {
+          "localUri": "localService/mainService/ZAJ_QUALITY_SB_VAN.xml"
+        }
+      },
+      "mainService": {
+        "uri": "/sap/opu/odata/sap/ZAJ_QUALITY_SB/",
+        "type": "OData",
+        "settings": {
+          "annotations": [
+            "ZAJ_QUALITY_SB_VAN"
+          ],
+          "localUri": "localService/mainService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "QUALITY-display": {
+          "semanticObject": "QUALITY",
+          "action": "display",
+          "title": "{{QUALITY-display.flpTitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "dependencies": {
+      "minUI5Version": "1.139.0",
+      "libs": {
+       "sap.ui.core": {},
+        "sap.m": {},
+        "sap.ui.layout": {},
+        "sap.ushell": {},
+        "sap.collaboration": {},
+        "sap.ui.comp": {},
+        "sap.uxap": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "quality.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {}
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "quality.view",
+        "async": true,
+        "viewPath": "quality.view"
+      },
+     "routes": [
+    {
+      "name": "login",
+      "pattern": "",
+      "target": ["login"]
+    },
+    {
+      "name": "home",
+      "pattern": "home",
+      "target": ["home"]
+    },
+    {
+      "name": "inspection",
+      "pattern": "inspection",
+      "target": ["inspection"]
+    },
+    {
+      "name": "record",
+      "pattern": "record",
+      "target": ["record"]
+    },
+    {
+      "name": "usage",
+      "pattern": "usage",
+      "target": ["usage"]
+    }
+  ],
+  "targets": {
+    "login": {
+      "id": "login",
+      "name": "Login"
+    },
+    "home": {
+      "id": "home",
+      "name": "Home"
+    },
+    "inspection": {
+      "id": "inspection",
+      "name": "Inspection"
+    },
+    "record": {
+      "id": "record",
+      "name": "Record"
+    },
+    "usage": {
+      "id": "usage",
+      "name": "Usage"
+    }
+  }
+    },
+    "rootView": {
+      "viewName": "quality.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

@@ -1,0 +1,57 @@
+<mvc:View
+  controllerName="quality.controller.Login"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  xmlns:l="sap.ui.layout"
+  xmlns:f="sap.ui.layout.form"
+  displayBlock="true">
+
+  <Page showHeader="false" class="login-page">
+    <content>
+      <VBox justifyContent="Center" alignItems="Center" class="login-container">
+        <VBox class="login-card">
+          <VBox class="logo-container">
+            <Image src="./images/logo.png" class="login-logo" decorative="true" width="70px"/>
+            <Label text="QUALITY PORTAL" class="portal-name"/>
+          </VBox>
+          
+          <Label text="Welcome Back" class="welcome-text"/>
+          <Label text="Sign in to access your account" class="subtitle-text"/>
+          
+          <VBox class="login-form">
+            <Label text="Username" class="input-label"/>
+            <HBox class="input-container">
+              <core:Icon src="sap-icon://employee" class="input-icon" />
+              <Input 
+                id="empId" 
+                placeholder="Enter your username" 
+                class="login-input"
+                type="Text"/>
+            </HBox>
+              
+            <Label text="Password" class="input-label"/>
+            <HBox class="input-container">
+              <core:Icon src="sap-icon://private" class="input-icon" />
+              <Input 
+                id="password" 
+                placeholder="Enter your password" 
+                type="Password" 
+                class="login-input"/>
+            </HBox>
+            
+            <Button 
+              text="Sign In" 
+              type="Emphasized" 
+              press="onLogin"
+              class="login-button"/>
+          </VBox>
+          
+          <HBox justifyContent="Center" class="footer">
+            <Label text="© 2023 Quality Management System" class="copyright"/>
+          </HBox>
+        </VBox>
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>

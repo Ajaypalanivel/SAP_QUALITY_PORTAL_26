@@ -1,0 +1,84 @@
+<mvc:View
+    controllerName="quality.controller.Usage"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Page 
+        title="Usage Decisions"
+        showNavButton="true"
+        navButtonPress=".onNavBack"
+        class="usage-page">
+
+        <content>
+            <VBox>
+                <!-- 🔍 Search + Filter -->
+                <Toolbar>
+                    <SearchField
+                        width="40%"
+                        liveChange=".onSearch"
+                        placeholder="Search by Lot, Decision, or User" />
+
+                    <ToolbarSpacer/>
+
+                    <Label text="Decision:"/>
+                    <Select id="decisionFilter" change=".onFilterDecision">
+                        <core:Item key="ALL" text="All" />
+                        <core:Item key="A" text="Accepted" />
+                        <core:Item key="R" text="Rejected" />
+                    </Select>
+                </Toolbar>
+
+                <!-- 📋 Table -->
+                <ScrollContainer width="100%" height="500px" horizontal="true" vertical="true">
+                    <Table id="usageTable" inset="false" items="{/UsageData}">
+                        <columns>
+                            <Column><Text text="Inspection Lot" /></Column>
+                            <Column><Text text="Lot Type" /></Column>
+                            <Column><Text text="Usage Catalog" /></Column>
+                            <Column><Text text="Plant" /></Column>
+                            <Column><Text text="Selected Set" /></Column>
+                            <Column><Text text="Code Group" /></Column>
+                            <Column><Text text="Decision Code" /></Column>
+                            <Column><Text text="Quality Score" /></Column>
+                            <Column><Text text="Decision By" /></Column>
+                            <Column><Text text="Decision Date" /></Column>
+                            <Column><Text text="Decision Time" /></Column>
+                            <Column><Text text="Follow Up" /></Column>
+                            <Column><Text text="Code Valuation" /></Column>
+                        </columns>
+
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text text="{InspectionLotNo}" />
+                                    <Text text="{InspectionLotType}" />
+                                    <Text text="{UsageCatalog}" />
+                                    <Text text="{Plant}" />
+                                    <Text text="{SelectedSet}" />
+                                    <Text text="{CodeGroup}" />
+                                    <Text text="{UsageDecisionCode}" />
+                                    <Text text="{QualityScore}" />
+                                    <Text text="{DecisionBy}" />
+                                    <Text text="{DecisionDate}" />
+                                    <Text text="{DecisionTime}" />
+                                    <Text text="{FollowUpAction}" />
+                                    <Text text="{CodeValuation}" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </ScrollContainer>
+
+                <!-- 📄 Pagination -->
+                <Toolbar class="pagination-toolbar" design="Transparent">
+                    <Button text="&lt;&lt;" press=".onFirstPage" class="pagination-btn"/>
+                    <Button text="&lt;" press=".onPrevPage" class="pagination-btn"/>
+                    <Text text="Page {/currentPage} of {/totalPages}" class="page-info"/>
+                    <Button text="&gt;" press=".onNextPage" class="pagination-btn"/>
+                    <Button text="&gt;&gt;" press=".onLastPage" class="pagination-btn"/>
+                </Toolbar>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

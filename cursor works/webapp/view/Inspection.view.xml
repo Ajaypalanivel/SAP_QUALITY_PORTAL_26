@@ -1,0 +1,83 @@
+<mvc:View
+    controllerName="quality.controller.Inspection"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Page 
+        title="Inspection Details"
+        showNavButton="true"
+        navButtonPress=".onNavBack"
+        class="inspection-page">
+
+        <content>
+            <VBox>
+                <!-- 🔍 Search + Filter Toolbar -->
+                <Toolbar>
+                    <SearchField
+                        width="40%"
+                        liveChange=".onSearch"
+                        placeholder="Search by Inspection Lot or Material" />
+                    
+                    <ToolbarSpacer/>
+
+                    <Label text="Usage Decision:"/>
+                    <Select id="udFilter" change=".onFilterUD">
+                        <core:Item key="ALL" text="All" />
+                        <core:Item key="A" text="Accepted" />
+                        <core:Item key="R" text="Rejected" />
+                    </Select>
+                </Toolbar>
+
+                <!-- 📋 Inspection Table inside ScrollContainer -->
+                <ScrollContainer
+                    width="100%"
+                    height="500px"
+                    horizontal="true"
+                    vertical="true">
+
+                    <Table id="inspectionTable" inset="false" items="{/InspectionData}">
+                        <columns>
+                            <Column><Text text="Inspection Lot" /></Column>
+                            <Column><Text text="Material" /></Column>
+                            <Column><Text text="Material Desc" /></Column>
+                            <Column><Text text="Plant" /></Column>
+                            <Column><Text text="Lot Quantity" /></Column>
+                            <Column><Text text="UoM" /></Column>
+                            <Column><Text text="Created On" /></Column>
+                            <Column><Text text="Start Date" /></Column>
+                            <Column><Text text="End Date" /></Column>
+                            <Column><Text text="Usage Decision" /></Column>
+                        </columns>
+
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text text="{InspectionLot}" />
+                                    <Text text="{MaterialNumber}" />
+                                    <Text text="{MaterialDesc}" />
+                                    <Text text="{Plant}" />
+                                    <Text text="{LotQuantity}" />
+                                    <Text text="{UoM}" />
+                                    <Text text="{path: 'CreatedDate', formatter: '.formatDate'}" />
+                                    <Text text="{path: 'StartDate', formatter: '.formatDate'}" />
+                                    <Text text="{path: 'EndDate', formatter: '.formatDate'}" />
+                                    <Text text="{UsageDecisionCode}" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </ScrollContainer>
+
+                <!-- 📄 Pagination Toolbar -->
+                <Toolbar class="pagination-toolbar" design="Transparent">
+                    <Button text="&lt;&lt;" press=".onFirstPage" class="pagination-btn"/>
+                    <Button text="&lt;" press=".onPrevPage" class="pagination-btn"/>
+                    <Text text="Page {/currentPage} of {/totalPages}" class="page-info"/>
+                    <Button text="&gt;" press=".onNextPage" class="pagination-btn"/>
+                    <Button text="&gt;&gt;" press=".onLastPage" class="pagination-btn"/>
+                </Toolbar>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
