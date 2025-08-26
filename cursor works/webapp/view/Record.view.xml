@@ -31,18 +31,18 @@
 
                 <!-- 📋 Records Table -->
                 <ScrollContainer width="100%" height="500px" horizontal="true" vertical="true">
-                    <Table id="recordTable" inset="false" items="{/RecordData}">
+                    <Table id="recordTable" inset="false" items="{/RecordData}" width="100%">
                         <columns>
-                            <Column><Text text="Inspection Lot" /></Column>
-                            <Column><Text text="Operation No" /></Column>
-                            <Column><Text text="Characteristic No" /></Column>
-                            <Column><Text text="Result Code" /></Column>
-                            <Column><Text text="Inspection Type" /></Column>
-                            <Column><Text text="Plant" /></Column>
-                            <Column><Text text="Material" /></Column>
-                            <Column><Text text="Object No" /></Column>
-                            <Column><Text text="Object Type" /></Column>
-                            <Column><Text text="Status" /></Column>
+                            <Column width="150px"><Text text="Inspection Lot" /></Column>
+                            <Column width="120px"><Text text="Operation No" /></Column>
+                            <Column width="120px"><Text text="Character No" /></Column>
+                            <Column width="120px"><Text text="Result Code" /></Column>
+                            <Column width="120px"><Text text="Inspection Type" /></Column>
+                            <Column width="100px"><Text text="Plant" /></Column>
+                            <Column width="120px"><Text text="Material" /></Column>
+                            <Column width="120px"><Text text="Object No" /></Column>
+                            <Column width="120px"><Text text="Object Type" /></Column>
+                            <Column width="100px"><Text text="Status" /></Column>
                         </columns>
 
                         <items>

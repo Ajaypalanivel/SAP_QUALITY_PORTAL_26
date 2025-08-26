@@ -1,8 +1,8 @@
 /* ===================================
-   Light Professional Login Page Styles
+   Professional Login Page Styles with New Color Palette
    =================================== */
 .login-page {
-    background: linear-gradient(135deg, #f0f4f8 0%, #e6eef7 100%);
+    background: linear-gradient(135deg, #D3DAD9 0%, #C8D1D0 100%);
     height: 100vh;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     display: flex;
@@ -25,15 +25,15 @@
 }
 
 .login-card {
-    background: #f8fafc;
+    background: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 35px rgba(55, 53, 62, 0.15);
     padding: 2.5rem 3rem 2rem 3rem;
     width: 420px;
     max-width: 85%;
     text-align: center;
     position: relative;
-    border: 1px solid #e1e8f0;
+    border: 1px solid #D3DAD9;
     margin: 0 auto;
     flex-shrink: 0;
     min-height: auto;
@@ -51,15 +51,15 @@
     margin: 0 auto 1rem;
     align-self: center;
     border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
-    background: #f0f7ff;
+    box-shadow: 0 8px 25px rgba(113, 90, 90, 0.15);
+    background: #D3DAD9;
     padding: 12px;
 }
 
 .portal-name {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #2563eb;
+    color: #37353E;
     letter-spacing: 1.2px;
     text-transform: uppercase;
 }
@@ -67,7 +67,7 @@
 .welcome-text {
     font-size: 2.1rem;
     font-weight: 700;
-    color: #1e293b;
+    color: #37353E;
     margin-bottom: 0.5rem;
     text-align: center;
     letter-spacing: -0.5px;
@@ -75,7 +75,7 @@
 
 .subtitle-text {
     font-size: 1.05rem;
-    color: #64748b;
+    color: #44444E;
     margin-bottom: 2rem;
     text-align: center;
     line-height: 1.6;
@@ -92,131 +92,26 @@
 .input-label {
     font-size: 0.95rem;
     font-weight: 600;
-    color: #374151;
+    color: #37353E;
     text-align: left;
     margin-bottom: 0.5rem;
     margin-top: 1rem;
     padding-left: 0.2rem;
 }
 
-.input-container {
-    position: relative;
-    align-items: center;
-    margin-bottom: 0.5rem;
-    border-radius: 12px;
-    padding: 0.75rem 1.25rem;
-    transition: all 0.25s ease;
-    background: #ffffff;
-    border: 2px solid #e2e8f0;
-    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
-}
-
-.input-container:focus-within {
-    border-color: #2563eb;
-    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
-    background: #f8fafc;
-    transform: translateY(-2px);
-}
-
-.input-icon {
-    color: #2563eb !important;
-    font-size: 1.3rem !important;
-    margin-right: 1rem;
-    min-width: 24px;
-    display: block !important;
-    visibility: visible !important;
-}
-
 .login-input {
-    border: none !important;
-    height: 2.4rem;
-    padding: 0;
-    font-size: 1rem;
-    flex-grow: 1;
-    color: #1f2937;
-    background: transparent !important;
-    box-shadow: none !important;
-    font-weight: 500;
+    margin-bottom: 0.5rem;
 }
 
-.login-input:focus {
-    outline: none !important;
-    box-shadow: none !important;
-}
 
-.login-input::placeholder {
-    color: #94a3b8;
-    font-weight: 400;
-}
 
-/* Remove UI5 Input Field Borders */
-.login-input .sapMInputBaseContentWrapper {
-    border: none !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    outline: none !important;
-}
 
-.login-input .sapMInputBaseContentWrapper:focus {
-    border: none !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    outline: none !important;
-}
 
-.login-input .sapMInputBaseContentWrapper:hover {
-    border: none !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    outline: none !important;
-}
 
-.login-input .sapMInputBaseInner {
-    border: none !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    outline: none !important;
-}
 
-.login-input .sapMInputBaseInner:focus {
-    outline: none !important;
-    box-shadow: none !important;
-    border: none !important;
-    background: transparent !important;
-}
 
-.login-input .sapMInputBaseInner:hover {
-    outline: none !important;
-    box-shadow: none !important;
-    border: none !important;
-    background: transparent !important;
-}
 
-.login-input .sapMInputBaseContentWrapper:focus {
-    outline: none !important;
-    box-shadow: none !important;
-    border: none !important;
-    background: transparent !important;
-}
 
-/* Remove ALL inner UI5 borders and focus states */
-.login-input .sapMInputBaseContentWrapper *,
-.login-input .sapMInputBaseInner * {
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-}
-
-/* Ensure no borders appear on any UI5 input elements */
-.login-input .sapMInputBaseContentWrapper,
-.login-input .sapMInputBaseInner,
-.login-input .sapMInputBaseContentWrapper *,
-.login-input .sapMInputBaseInner * {
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-    background: transparent !important;
-}
 
 /* Prevent scrollbars */
 .login-page .sapMPageContent,
@@ -235,13 +130,13 @@
     border-radius: 12px;
     font-weight: 700;
     font-size: 1.15rem;
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    background: linear-gradient(135deg, #715A5A 0%, #5A4A4A 100%);
     border: none;
     margin-top: 1.5rem;
     color: white;
     transition: all 0.3s ease;
     letter-spacing: 0.5px;
-    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.25);
+    box-shadow: 0 6px 20px rgba(113, 90, 90, 0.25);
     text-transform: uppercase;
     position: relative;
     overflow: hidden;
@@ -251,14 +146,14 @@
 }
 
 .login-button:hover {
-    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+    background: linear-gradient(135deg, #5A4A4A 0%, #4A3A3A 100%);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+    box-shadow: 0 10px 25px rgba(113, 90, 90, 0.35);
 }
 
 .login-button:active {
     transform: translateY(0);
-    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+    box-shadow: 0 4px 15px rgba(113, 90, 90, 0.2);
 }
 
 /* Button shine effect */
@@ -285,14 +180,14 @@
 .footer {
     margin-top: 1.5rem;
     padding-top: 1rem;
-    border-top: 1px solid #f1f5f9;
+    border-top: 1px solid #D3DAD9;
     width: 100%;
     box-sizing: border-box;
 }
 
 .copyright {
     font-size: 0.85rem;
-    color: #64748b;
+    color: #44444E;
     font-weight: 400;
 }
 
@@ -326,9 +221,7 @@
         font-size: 1.1rem;
     }
     
-    .input-container {
-        padding: 0.7rem 1rem;
-    }
+
 }
 
 /* =============================
@@ -343,41 +236,25 @@
     animation: fadeIn 0.6s ease-out;
 }
 
-.input-container {
-    animation: fadeIn 0.8s ease-out;
-}
+
 
 .login-button {
     animation: fadeIn 1s ease-out;
 }
 
-/* =============================
-   Force icon visibility
-   ============================= */
-.sapUiIcon {
-    color: #2563eb !important;
-    font-size: 1.3rem !important;
-    display: inline-block !important;
-    visibility: visible !important;
-}
 
-.coreIcon {
-    color: #2563eb !important;
-    display: block !important;
-    visibility: visible !important;
-}
 
 /* ===================================
-   Enhanced Professional Home Page Styles
+   Enhanced Professional Home Page Styles with New Color Palette
    =================================== */
 .home-page {
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    background: linear-gradient(135deg, #D3DAD9 0%, #C8D1D0 100%);
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     min-height: 100vh;
 }
 
 .home-page .sapMPage {
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+    background: linear-gradient(135deg, #D3DAD9 0%, #C8D1D0 100%) !important;
     margin-top: 0 !important;
 }
 
@@ -394,8 +271,8 @@
     right: 0 !important;
     z-index: 1000 !important;
     background: white !important;
-    border-bottom: 2px solid #e2e8f0 !important;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1) !important;
+    border-bottom: 2px solid #715A5A !important;
+    box-shadow: 0 2px 15px rgba(113, 90, 90, 0.15) !important;
     height: 90px !important;
     min-height: 90px !important;
     width: 100% !important;
@@ -421,7 +298,7 @@
 }
 
 .navbar-title {
-    color: #1e293b !important;
+    color: #37353E !important;
     font-weight: 800 !important;
     font-size: 1.8rem !important;
     margin: 0 !important;
@@ -450,13 +327,13 @@
 /* New Logout Button - Matches Start Inspection Button */
 .navbar-logout-btn {
     color: white !important;
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+    background: linear-gradient(135deg, #715A5A 0%, #5A4A4A 100%) !important;
     border: none !important;
     border-radius: 10px !important;
     font-weight: 600 !important;
     padding: 0.8rem 1.5rem !important;
     min-width: 120px !important;
-    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25) !important;
+    box-shadow: 0 4px 15px rgba(113, 90, 90, 0.25) !important;
     transition: all 0.3s ease !important;
     text-transform: uppercase !important;
     letter-spacing: 0.5px !important;
@@ -513,15 +390,39 @@
     background: transparent !important;
 }
 
+/* Remove blue focus outline/ring around Logout button (UI5 focus marker) */
+.navbar-logout-btn:focus,
+.navbar-logout-btn:focus-visible {
+    outline: none !important;
+}
+
+.navbar-logout-btn .sapMBtn:focus-visible,
+.navbar-logout-btn .sapMBtnInner:focus-visible,
+.navbar-logout-btn .sapMBtnContent:focus-visible,
+.navbar-logout-btn .sapMFocusable:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-logout-btn .sapMBtnInner:before,
+.navbar-logout-btn .sapMBtn:focus .sapMBtnInner:before,
+.navbar-logout-btn .sapMBtn:focus-visible .sapMBtnInner:before,
+.navbar-logout-btn .sapMFocusable:focus::before {
+    content: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
 .navbar-logout-btn:hover {
-    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%) !important;
+    background: linear-gradient(135deg, #5A4A4A 0%, #4A3A3A 100%) !important;
     color: white !important;
     transform: translateY(-2px) !important;
-    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35) !important;
+    box-shadow: 0 6px 20px rgba(113, 90, 90, 0.35) !important;
 }
 
 .navbar-logout-btn:active {
     transform: translateY(0) !important;
+    
 }
 
 /* Main Content - Proper spacing for fixed navbar */
@@ -563,11 +464,11 @@
 .welcome-title {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #1e293b;
+    color: #37353E;
     text-align: center;
     margin-bottom: 0.5rem;
     letter-spacing: -0.5px;
-    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    background: linear-gradient(135deg, #715A5A 0%, #5A4A4A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -575,7 +476,7 @@
 
 .welcome-subtitle {
     font-size: 1.1rem;
-    color: #64748b;
+    color: #44444E;
     text-align: center;
     margin-bottom: 3rem;
     font-weight: 400;
@@ -587,7 +488,7 @@
     width: 320px;
     min-height: 320px;
     border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 25px rgba(55, 53, 62, 0.1);
     border: none;
     transition: all 0.3s ease;
     background: white;
@@ -602,18 +503,18 @@
 /* Card Header */
 .card-header {
     background: transparent !important;
-    border-bottom: 2px solid #e2e8f0;
+    border-bottom: 2px solid #D3DAD9;
     padding: 1.2rem;
 }
 
 .card-header-icon {
-    color: #2563eb;
+    color: #715A5A;
     font-size: 1.3rem;
     margin-right: 0.8rem;
 }
 
 .card-title {
-    color: #1e293b !important;
+    color: #37353E !important;
     font-weight: 700;
     font-size: 1.2rem;
 }
@@ -630,16 +531,16 @@
     margin-bottom: 0.8rem;
     padding: 1.2rem;
     border-radius: 50%;
-    background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 100%);
-    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.12);
+    background: linear-gradient(135deg, #D3DAD9 0%, #C8D1D0 100%);
+    box-shadow: 0 6px 20px rgba(113, 90, 90, 0.12);
 }
 
-.inspection-icon { color: #2563eb; }
-.record-icon { color: #10b981; }
-.usage-icon { color: #8b5cf6; }
+.inspection-icon { color: #715A5A; }
+.record-icon { color: #715A5A; }
+.usage-icon { color: #715A5A; }
 
 .card-description {
-    color: #64748b;
+    color: #44444E;
     font-size: 0.95rem;
     line-height: 1.5;
     text-align: center;
@@ -665,15 +566,15 @@
 }
 
 .inspection-btn {
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    background: linear-gradient(135deg, #715A5A 0%, #5A4A4A 100%);
 }
 
 .record-btn {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #715A5A 0%, #5A4A4A 100%);
 }
 
 .usage-btn {
-    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, #715A5A 0%, #5A4A4A 100%);
 }
 
 .card-button:hover {
@@ -822,24 +723,24 @@
 }
 
 /* ===================================
-   Professional Inspection Page Styles
+   Professional Inspection Page Styles with New Color Palette
    =================================== */
 
 /* Inspection Page Background */
 .inspection-page {
-    background: #f8fafc !important;
+    background: #D3DAD9 !important;
     min-height: 100vh;
 }
 
 /* Enhanced Page Header */
 .inspection-page .sapMPage {
-    background: #f8fafc !important;
+    background: #D3DAD9 !important;
 }
 
 .inspection-page .sapMPageHeader {
     background: white !important;
-    border-bottom: 2px solid #e2e8f0 !important;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
+    border-bottom: 2px solid #715A5A !important;
+    box-shadow: 0 2px 15px rgba(113, 90, 90, 0.08) !important;
     padding: 1rem 0 !important;
     margin-bottom: 1rem !important;
     position: fixed !important;
@@ -851,7 +752,7 @@
 }
 
 .inspection-page .sapMPageTitle {
-    color: #1e293b !important;
+    color: #37353E !important;
     font-weight: 700 !important;
     font-size: 1.8rem !important;
     text-shadow: none !important;
@@ -870,12 +771,12 @@
 
 /* Enhanced Search and Filter Toolbar */
 .inspection-page .sapMTB {
-    background: white !important;
-    border: 1px solid #e2e8f0 !important;
+    /* background: white !important;
+    border: 1px solid #D3DAD9 !important; */
     border-radius: 12px !important;
     margin: 90px 0 1.5rem 0 !important;
     padding: 1.5rem !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    /* box-shadow: 0 4px 20px rgba(55, 53, 62, 0.06) !important; */
     position: relative !important;
     z-index: 1 !important;
     clear: both !important;
@@ -889,7 +790,7 @@
 
 .inspection-page .sapMSF {
     border-radius: 8px !important;
-    border: 2px solid #e2e8f0 !important;
+    /* border: 2px solid #D3DAD9 !important; */
     transition: all 0.3s ease !important;
     margin-right: 2rem !important;
     width: 100% !important;
@@ -898,31 +799,31 @@
 }
 
 .inspection-page .sapMSF:focus-within {
-    border-color: #2563eb !important;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+    /* border-color: #715A5A !important;
+    box-shadow: 0 0 0 3px rgba(113, 90, 90, 0.1) !important; */
 }
 
 .inspection-page .sapMSF .sapMSFF {
     border-radius: 8px !important;
-    background: #f8fafc !important;
+    /* background: #D3DAD9 !important; */
     width: 100% !important;
 }
 
 .inspection-page .sapMSF .sapMSFI {
-    color: #1e293b !important;
+    /* color: #37353E !important; */
     font-weight: 500 !important;
     width: 100% !important;
 }
 
 .inspection-page .sapMSF .sapMSFI::placeholder {
-    color: #94a3b8 !important;
+    color: #44444E !important;
     font-weight: 400 !important;
 }
 
 /* Enhanced Filter Select */
 .inspection-page .sapMSlt {
     border-radius: 8px !important;
-    border: 2px solid #e2e8f0 !important;
+    border: 2px solid #D3DAD9 !important;
     background: white !important;
     transition: all 0.3s ease !important;
     min-width: 180px !important;
@@ -932,27 +833,27 @@
 }
 
 .inspection-page .sapMSlt:hover {
-    border-color: #cbd5e1 !important;
+    border-color: #715A5A !important;
 }
 
 .inspection-page .sapMSlt:focus {
-    border-color: #2563eb !important;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+    border-color: #715A5A !important;
+    box-shadow: 0 0 0 3px rgba(113, 90, 90, 0.1) !important;
 }
 
 .inspection-page .sapMSlt .sapMSltLabel {
-    color: #1e293b !important;
+    color: #37353E !important;
     font-weight: 600 !important;
     font-size: 0.9rem !important;
 }
 
 .inspection-page .sapMSlt .sapMSltArrow {
-    color: #64748b !important;
+    color: #44444E !important;
 }
 
 /* Filter Label Styling */
 .inspection-page .sapMLabel {
-    color: #374151 !important;
+    color: #37353E !important;
     font-weight: 600 !important;
     font-size: 0.9rem !important;
     margin-right: 0.8rem !important;
@@ -963,9 +864,9 @@
 /* Enhanced Table Styling */
 .inspection-page .sapMScrollCont {
     border-radius: 12px !important;
-    border: 1px solid #e2e8f0 !important;
+    border: 1px solid #D3DAD9 !important;
     background: white !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 4px 20px rgba(55, 53, 62, 0.06) !important;
     margin: 1.5rem 0 !important;
     width: calc(100% - 3rem) !important;
     max-width: 100% !important;
@@ -979,8 +880,8 @@
 
 /* Professional Table Headers */
 .inspection-page .sapMTableTHead {
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
-    border-bottom: 2px solid #e2e8f0 !important;
+    background: linear-gradient(135deg, #D3DAD9 0%, #C8D1D0 100%) !important;
+    border-bottom: 2px solid #D3DAD9 !important;
     position: sticky !important;
     top: 0 !important;
     z-index: 100 !important;
@@ -988,7 +889,7 @@
 
 .inspection-page .sapMTableTHead .sapMColumnHeader {
     background: transparent !important;
-    border-right: 1px solid #e2e8f0 !important;
+    border-right: 1px solid #D3DAD9 !important;
     padding: 1rem 0.75rem !important;
     position: sticky !important;
     top: 0 !important;
@@ -996,7 +897,7 @@
 }
 
 .inspection-page .sapMTableTHead .sapMText {
-    color: #1e293b !important;
+    color: #37353E !important;
     font-weight: 700 !important;
     font-size: 0.9rem !important;
     text-transform: uppercase !important;
@@ -1010,21 +911,21 @@
 }
 
 .inspection-page .sapMTableTBody .sapMListTblRow {
-    border-bottom: 1px solid #f1f5f9 !important;
+    border-bottom: 1px solid #D3DAD9 !important;
     transition: background-color 0.2s ease !important;
 }
 
 .inspection-page .sapMTableTBody .sapMListTblRow:hover {
-    background: #f8fafc !important;
+    background: #D3DAD9 !important;
 }
 
 .inspection-page .sapMTableTBody .sapMListTblCell {
     padding: 1rem 0.75rem !important;
-    border-right: 1px solid #f1f5f9 !important;
+    border-right: 1px solid #D3DAD9 !important;
 }
 
 .inspection-page .sapMTableTBody .sapMText {
-    color: #374151 !important;
+    color: #37353E !important;
     font-weight: 500 !important;
     font-size: 0.9rem !important;
 }
@@ -1032,11 +933,11 @@
 /* Enhanced Pagination Toolbar */
 .inspection-page .pagination-toolbar {
     background: white !important;
-    border: 1px solid #e2e8f0 !important;
+    border: 1px solid #D3DAD9 !important;
     border-radius: 12px !important;
     margin: 1.5rem 0 !important;
     padding: 1rem !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 4px 20px rgba(55, 53, 62, 0.06) !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -1048,24 +949,24 @@
 /* Professional Pagination Buttons */
 .inspection-page .pagination-btn {
     background: white !important;
-    border: 2px solid #e2e8f0 !important;
+    border: 2px solid #D3DAD9 !important;
     border-radius: 8px !important;
-    color: #64748b !important;
+    color: #44444E !important;
     font-weight: 600 !important;
     font-size: 0.9rem !important;
     padding: 0.6rem 1rem !important;
     min-width: 44px !important;
     height: 44px !important;
     transition: all 0.3s ease !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 2px 8px rgba(55, 53, 62, 0.08) !important;
 }
 
 .inspection-page .pagination-btn:hover {
-    background: #f8fafc !important;
-    border-color: #cbd5e1 !important;
-    color: #374151 !important;
+    background: #D3DAD9 !important;
+    border-color: #715A5A !important;
+    color: #37353E !important;
     transform: translateY(-1px) !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+    box-shadow: 0 4px 12px rgba(55, 53, 62, 0.12) !important;
 }
 
 .inspection-page .pagination-btn:active {
@@ -1074,35 +975,35 @@
 
 .inspection-page .pagination-btn:focus {
     outline: none !important;
-    border-color: #2563eb !important;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+    border-color: #715A5A !important;
+    box-shadow: 0 0 0 3px rgba(113, 90, 90, 0.1) !important;
 }
 
 /* Active/Current Page Button */
 .inspection-page .pagination-btn.active {
-    background: #2563eb !important;
-    border-color: #2563eb !important;
+    background: #715A5A !important;
+    border-color: #715A5A !important;
     color: white !important;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25) !important;
+    box-shadow: 0 4px 12px rgba(113, 90, 90, 0.25) !important;
 }
 
 .inspection-page .pagination-btn.active:hover {
-    background: #1d4ed8 !important;
-    border-color: #1d4ed8 !important;
+    background: #5A4A4A !important;
+    border-color: #5A4A4A !important;
     transform: translateY(-1px) !important;
-    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3) !important;
+    box-shadow: 0 6px 16px rgba(113, 90, 90, 0.3) !important;
 }
 
 /* Page Info Text */
 .inspection-page .page-info {
-    color: #64748b !important;
+    color: #44444E !important;
     font-weight: 600 !important;
     font-size: 0.9rem !important;
     margin: 0 1rem !important;
     padding: 0.5rem 1rem !important;
-    background: #f8fafc !important;
+    background: #D3DAD9 !important;
     border-radius: 6px !important;
-    border: 1px solid #e2e8f0 !important;
+    border: 1px solid #D3DAD9 !important;
 }
 
 /* Custom Scrollbar Styling */
@@ -1383,25 +1284,124 @@
     border-top: none !important;
 }
 
+/* Prevent text wrapping in Inspection table cells */
+.inspection-page .sapMTableTBody .sapMText {
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    max-width: none !important;
+}
+
+.inspection-page .sapMTableTBody .sapMListTblCell {
+    white-space: nowrap !important;
+    overflow: visible !important;
+    padding: 0.75rem 0.5rem !important;
+}
+
+/* Ensure table columns have proper width and no truncation */
+.inspection-page .sapMTable .sapMTableTHead .sapMColumnHeader {
+    min-width: 100px !important;
+    max-width: none !important;
+    padding: 0.75rem 0.5rem !important;
+}
+
+.inspection-page .sapMTable .sapMTableTBody .sapMListTblCell {
+    min-width: 100px !important;
+    max-width: none !important;
+    padding: 0.75rem 0.5rem !important;
+}
+
+/* Ensure horizontal scroll works properly */
+.inspection-page .sapMScrollCont {
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+}
+
+.inspection-page .sapMTable {
+    min-width: 1500px !important;
+    width: 100% !important;
+}
+
+/* Custom scrollbar styling for Inspection Page */
+.inspection-page .sapMScrollCont::-webkit-scrollbar {
+    width: 12px !important;
+    height: 12px !important;
+    display: block !important;
+    visibility: visible !important;
+}
+
+.inspection-page .sapMScrollCont::-webkit-scrollbar-track {
+    background: #f1f5f9 !important;
+    border-radius: 6px !important;
+    display: block !important;
+    visibility: visible !important;
+}
+
+.inspection-page .sapMScrollCont::-webkit-scrollbar-thumb {
+    background: #715A5A !important;
+    border-radius: 6px !important;
+    border: 2px solid #f1f5f9 !important;
+    transition: background-color 0.3s ease !important;
+    display: block !important;
+    visibility: visible !important;
+    min-height: 20px !important;
+}
+
+.inspection-page .sapMScrollCont::-webkit-scrollbar-thumb:hover {
+    background: #5A4A4A !important;
+}
+
+.inspection-page .sapMScrollCont::-webkit-scrollbar-corner {
+    background: #f1f5f9 !important;
+}
+
+/* Force horizontal scrollbar to always show */
+.inspection-page .sapMScrollCont::-webkit-scrollbar:horizontal {
+    height: 12px !important;
+    display: block !important;
+    visibility: visible !important;
+}
+
+/* Firefox scrollbar */
+.inspection-page .sapMScrollCont {
+    scrollbar-width: thin !important;
+    scrollbar-color: #715A5A #f1f5f9 !important;
+}
+
+/* Force scrollbar to always show */
+.inspection-page .sapMScrollCont {
+    overflow-x: scroll !important;
+    overflow-y: auto !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: #715A5A #f1f5f9 !important;
+}
+
+/* Ensure table forces horizontal scroll */
+.inspection-page .sapMTable {
+    min-width: 1500px !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+}
+
 /* ===================================
-   Professional Record Page Styles
+   Professional Record Page Styles with New Color Palette
    =================================== */
 
 /* Record Page Background */
 .record-page {
-    background: #f8fafc !important;
+    background: #D3DAD9 !important;
     min-height: 100vh;
 }
 
 /* Enhanced Page Header */
 .record-page .sapMPage {
-    background: #f8fafc !important;
+    background: #D3DAD9 !important;
 }
 
 .record-page .sapMPageHeader {
     background: white !important;
-    border-bottom: 2px solid #e2e8f0 !important;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
+    border-bottom: 2px solid #715A5A !important;
+    box-shadow: 0 2px 15px rgba(113, 90, 90, 0.08) !important;
     padding: 1rem 0 !important;
     margin-bottom: 1rem !important;
     position: fixed !important;
@@ -1413,7 +1413,7 @@
 }
 
 .record-page .sapMPageTitle {
-    color: #1e293b !important;
+    color: #37353E !important;
     font-weight: 700 !important;
     font-size: 1.8rem !important;
     text-shadow: none !important;
@@ -1432,12 +1432,12 @@
 
 /* Enhanced Search and Filter Toolbar */
 .record-page .sapMTB {
-    background: white !important;
-    border: 1px solid #e2e8f0 !important;
+    /* background: white !important; */
+    border: 1px solid #D3DAD9 !important;
     border-radius: 12px !important;
     margin: 90px 0 1.5rem 0 !important;
     padding: 1.5rem !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    /* box-shadow: 0 4px 20px rgba(55, 53, 62, 0.06) !important; */
     position: relative !important;
     z-index: 1 !important;
     clear: both !important;
@@ -1451,7 +1451,7 @@
 
 .record-page .sapMSF {
     border-radius: 8px !important;
-    border: 2px solid #e2e8f0 !important;
+    /* border: 2px solid #D3DAD9 !important; */
     transition: all 0.3s ease !important;
     margin-right: 2rem !important;
     width: 100% !important;
@@ -1460,31 +1460,31 @@
 }
 
 .record-page .sapMSF:focus-within {
-    border-color: #2563eb !important;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+    /* border-color: #715A5A !important; */
+    /* box-shadow: 0 0 0 3px rgba(113, 90, 90, 0.1) !important; */
 }
 
 .record-page .sapMSF .sapMSFF {
     border-radius: 8px !important;
-    background: #f8fafc !important;
+    /* background: #D3DAD9 !important; */
     width: 100% !important;
 }
 
 .record-page .sapMSF .sapMSFI {
-    color: #1e293b !important;
+    /* color: #37353E !important; */
     font-weight: 500 !important;
     width: 100% !important;
 }
 
 .record-page .sapMSF .sapMSFI::placeholder {
-    color: #94a3b8 !important;
+    color: #44444E !important;
     font-weight: 400 !important;
 }
 
 /* Enhanced Filter Select */
 .record-page .sapMSlt {
     border-radius: 8px !important;
-    border: 2px solid #e2e8f0 !important;
+    border: 2px solid #D3DAD9 !important;
     background: white !important;
     transition: all 0.3s ease !important;
     min-width: 180px !important;
@@ -1494,27 +1494,27 @@
 }
 
 .record-page .sapMSlt:hover {
-    border-color: #cbd5e1 !important;
+    border-color: #715A5A !important;
 }
 
 .record-page .sapMSlt:focus {
-    border-color: #2563eb !important;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+    border-color: #715A5A !important;
+    box-shadow: 0 0 0 3px rgba(113, 90, 90, 0.1) !important;
 }
 
 .record-page .sapMSlt .sapMSltLabel {
-    color: #1e293b !important;
+    color: #37353E !important;
     font-weight: 600 !important;
     font-size: 0.9rem !important;
 }
 
 .record-page .sapMSlt .sapMSltArrow {
-    color: #64748b !important;
+    color: #44444E !important;
 }
 
 /* Filter Label Styling */
 .record-page .sapMLabel {
-    color: #374151 !important;
+    color: #37353E !important;
     font-weight: 600 !important;
     font-size: 0.9rem !important;
     margin-right: 0.8rem !important;
@@ -1525,9 +1525,9 @@
 /* Enhanced Table Styling */
 .record-page .sapMScrollCont {
     border-radius: 12px !important;
-    border: 1px solid #e2e8f0 !important;
+    border: 1px solid #D3DAD9 !important;
     background: white !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 4px 20px rgba(55, 53, 62, 0.06) !important;
     margin: 1.5rem 0 !important;
     width: calc(100% - 3rem) !important;
     max-width: 100% !important;
@@ -1541,8 +1541,8 @@
 
 /* Professional Table Headers - Sticky */
 .record-page .sapMTableTHead {
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
-    border-bottom: 2px solid #e2e8f0 !important;
+    background: linear-gradient(135deg, #D3DAD9 0%, #C8D1D0 100%) !important;
+    border-bottom: 2px solid #D3DAD9 !important;
     position: sticky !important;
     top: 0 !important;
     z-index: 100 !important;
@@ -1550,7 +1550,7 @@
 
 .record-page .sapMTableTHead .sapMColumnHeader {
     background: transparent !important;
-    border-right: 1px solid #e2e8f0 !important;
+    border-right: 1px solid #D3DAD9 !important;
     padding: 1rem 0.75rem !important;
     position: sticky !important;
     top: 0 !important;
@@ -1558,7 +1558,7 @@
 }
 
 .record-page .sapMTableTHead .sapMText {
-    color: #1e293b !important;
+    color: #37353E !important;
     font-weight: 700 !important;
     font-size: 0.9rem !important;
     text-transform: uppercase !important;
@@ -1572,21 +1572,21 @@
 }
 
 .record-page .sapMTableTBody .sapMListTblRow {
-    border-bottom: 1px solid #f1f5f9 !important;
+    border-bottom: 1px solid #D3DAD9 !important;
     transition: background-color 0.2s ease !important;
 }
 
 .record-page .sapMTableTBody .sapMListTblRow:hover {
-    background: #f8fafc !important;
+    background: #D3DAD9 !important;
 }
 
 .record-page .sapMTableTBody .sapMListTblCell {
     padding: 1rem 0.75rem !important;
-    border-right: 1px solid #f1f5f9 !important;
+    border-right: 1px solid #D3DAD9 !important;
 }
 
 .record-page .sapMTableTBody .sapMText {
-    color: #374151 !important;
+    color: #37353E !important;
     font-weight: 500 !important;
     font-size: 0.9rem !important;
 }
@@ -1594,11 +1594,11 @@
 /* Enhanced Pagination Toolbar */
 .record-page .pagination-toolbar {
     background: white !important;
-    border: 1px solid #e2e8f0 !important;
+    border: 1px solid #D3DAD9 !important;
     border-radius: 12px !important;
     margin: 1.5rem 0 !important;
     padding: 1rem !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 4px 20px rgba(55, 53, 62, 0.06) !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -1610,24 +1610,24 @@
 /* Professional Pagination Buttons */
 .record-page .pagination-btn {
     background: white !important;
-    border: 2px solid #e2e8f0 !important;
+    border: 2px solid #D3DAD9 !important;
     border-radius: 8px !important;
-    color: #64748b !important;
+    color: #44444E !important;
     font-weight: 600 !important;
     font-size: 0.9rem !important;
     padding: 0.6rem 1rem !important;
     min-width: 44px !important;
     height: 44px !important;
     transition: all 0.3s ease !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 2px 8px rgba(55, 53, 62, 0.08) !important;
 }
 
 .record-page .pagination-btn:hover {
-    background: #f8fafc !important;
-    border-color: #cbd5e1 !important;
-    color: #374151 !important;
+    background: #D3DAD9 !important;
+    border-color: #715A5A !important;
+    color: #37353E !important;
     transform: translateY(-1px) !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+    box-shadow: 0 4px 12px rgba(55, 53, 62, 0.12) !important;
 }
 
 .record-page .pagination-btn:active {
@@ -1636,35 +1636,35 @@
 
 .record-page .pagination-btn:focus {
     outline: none !important;
-    border-color: #2563eb !important;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+    border-color: #715A5A !important;
+    box-shadow: 0 0 0 3px rgba(113, 90, 90, 0.1) !important;
 }
 
 /* Active/Current Page Button */
 .record-page .pagination-btn.active {
-    background: #2563eb !important;
-    border-color: #2563eb !important;
+    background: #715A5A !important;
+    border-color: #715A5A !important;
     color: white !important;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25) !important;
+    box-shadow: 0 4px 12px rgba(113, 90, 90, 0.25) !important;
 }
 
 .record-page .pagination-btn.active:hover {
-    background: #1d4ed8 !important;
-    border-color: #1d4ed8 !important;
+    background: #5A4A4A !important;
+    border-color: #5A4A4A !important;
     transform: translateY(-1px) !important;
-    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3) !important;
+    box-shadow: 0 6px 16px rgba(113, 90, 90, 0.3) !important;
 }
 
 /* Page Info Text */
 .record-page .page-info {
-    color: #64748b !important;
+    color: #44444E !important;
     font-weight: 600 !important;
     font-size: 0.9rem !important;
     margin: 0 1rem !important;
     padding: 0.5rem 1rem !important;
-    background: #f8fafc !important;
+    background: #D3DAD9 !important;
     border-radius: 6px !important;
-    border: 1px solid #e2e8f0 !important;
+    border: 1px solid #D3DAD9 !important;
 }
 
 /* Custom Scrollbar Styling */
@@ -1770,25 +1770,124 @@
     border-top: none !important;
 }
 
+/* Prevent text wrapping in Record table cells */
+.record-page .sapMTableTBody .sapMText {
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    max-width: none !important;
+}
+
+.record-page .sapMTableTBody .sapMListTblCell {
+    white-space: nowrap !important;
+    overflow: visible !important;
+    padding: 0.75rem 0.5rem !important;
+}
+
+/* Ensure table columns have proper width and no truncation */
+.record-page .sapMTable .sapMTableTHead .sapMColumnHeader {
+    min-width: 100px !important;
+    max-width: none !important;
+    padding: 0.75rem 0.5rem !important;
+}
+
+.record-page .sapMTable .sapMTableTBody .sapMListTblCell {
+    min-width: 100px !important;
+    max-width: none !important;
+    padding: 0.75rem 0.5rem !important;
+}
+
+/* Ensure horizontal scroll works properly */
+.record-page .sapMScrollCont {
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+}
+
+.record-page .sapMTable {
+    min-width: 1500px !important;
+    width: 100% !important;
+}
+
+/* Custom scrollbar styling for Record Page */
+.record-page .sapMScrollCont::-webkit-scrollbar {
+    width: 12px !important;
+    height: 12px !important;
+    display: block !important;
+    visibility: visible !important;
+}
+
+.record-page .sapMScrollCont::-webkit-scrollbar-track {
+    background: #f1f5f9 !important;
+    border-radius: 6px !important;
+    display: block !important;
+    visibility: visible !important;
+}
+
+.record-page .sapMScrollCont::-webkit-scrollbar-thumb {
+    background: #715A5A !important;
+    border-radius: 6px !important;
+    border: 2px solid #f1f5f9 !important;
+    transition: background-color 0.3s ease !important;
+    display: block !important;
+    visibility: visible !important;
+    min-height: 20px !important;
+}
+
+.record-page .sapMScrollCont::-webkit-scrollbar-thumb:hover {
+    background: #5A4A4A !important;
+}
+
+.record-page .sapMScrollCont::-webkit-scrollbar-corner {
+    background: #f1f5f9 !important;
+}
+
+/* Force horizontal scrollbar to always show */
+.record-page .sapMScrollCont::-webkit-scrollbar:horizontal {
+    height: 12px !important;
+    display: block !important;
+    visibility: visible !important;
+}
+
+/* Firefox scrollbar */
+.record-page .sapMScrollCont {
+    scrollbar-width: thin !important;
+    scrollbar-color: #715A5A #f1f5f9 !important;
+}
+
+/* Force scrollbar to always show */
+.record-page .sapMScrollCont {
+    overflow-x: scroll !important;
+    overflow-y: auto !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: #715A5A #f1f5f9 !important;
+}
+
+/* Ensure table forces horizontal scroll */
+.record-page .sapMTable {
+    min-width: 1500px !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+}
+
 /* ===================================
-   Professional Usage Page Styles
+   Professional Usage Page Styles with New Color Palette
    =================================== */
 
 /* Usage Page Background */
 .usage-page {
-    background: #f8fafc !important;
+    background: #D3DAD9 !important;
     min-height: 100vh;
 }
 
 /* Enhanced Page Header */
 .usage-page .sapMPage {
-    background: #f8fafc !important;
+    background: #D3DAD9 !important;
 }
 
 .usage-page .sapMPageHeader {
     background: white !important;
-    border-bottom: 2px solid #e2e8f0 !important;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
+    border-bottom: 2px solid #715A5A !important;
+    box-shadow: 0 2px 15px rgba(113, 90, 90, 0.08) !important;
     padding: 1rem 0 !important;
     margin-bottom: 1rem !important;
     position: fixed !important;
@@ -1800,7 +1899,7 @@
 }
 
 .usage-page .sapMPageTitle {
-    color: #1e293b !important;
+    color: #37353E !important;
     font-weight: 700 !important;
     font-size: 1.8rem !important;
     text-shadow: none !important;
@@ -1820,11 +1919,11 @@
 /* Enhanced Search and Filter Toolbar */
 .usage-page .sapMTB {
     background: white !important;
-    border: 1px solid #e2e8f0 !important;
+    border: 1px solid #D3DAD9 !important;
     border-radius: 12px !important;
     margin: 90px 0 1.5rem 0 !important;
     padding: 1.5rem !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    /* box-shadow: 0 4px 20px rgba(55, 53, 62, 0.06) !important; */
     position: relative !important;
     z-index: 1 !important;
     clear: both !important;
@@ -1838,7 +1937,7 @@
 
 .usage-page .sapMSF {
     border-radius: 8px !important;
-    border: 2px solid #e2e8f0 !important;
+    border: 2px solid #D3DAD9 !important;
     transition: all 0.3s ease !important;
     margin-right: 2rem !important;
     width: 100% !important;
@@ -1847,32 +1946,32 @@
 }
 
 .usage-page .sapMSF:focus-within {
-    border-color: #2563eb !important;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+    /* border-color: #715A5A !important; */
+    box-shadow: 0 0 0 3px rgba(113, 90, 90, 0.1) !important;
 }
 
 .usage-page .sapMSF .sapMSFF {
     border-radius: 8px !important;
-    background: #f8fafc !important;
+    background: #D3DAD9 !important;
     width: 100% !important;
 }
 
 .usage-page .sapMSF .sapMSFI {
-    color: #1e293b !important;
+    /* color: #37353E !important; */
     font-weight: 500 !important;
     width: 100% !important;
 }
 
 .usage-page .sapMSF .sapMSFI::placeholder {
-    color: #94a3b8 !important;
+    /* color: #44444E !important; */
     font-weight: 400 !important;
 }
 
 /* Enhanced Filter Select */
 .usage-page .sapMSlt {
     border-radius: 8px !important;
-    border: 2px solid #e2e8f0 !important;
-    background: white !important;
+    /* border: 2px solid #D3DAD9 !important;
+    background: white !important; */
     transition: all 0.3s ease !important;
     min-width: 180px !important;
     margin-left: 0 !important;
@@ -1881,27 +1980,27 @@
 }
 
 .usage-page .sapMSlt:hover {
-    border-color: #cbd5e1 !important;
+    /* border-color: #715A5A !important; */
 }
 
 .usage-page .sapMSlt:focus {
-    border-color: #2563eb !important;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+    /* border-color: #715A5A !important;
+    box-shadow: 0 0 0 3px rgba(113, 90, 90, 0.1) !important; */
 }
 
 .usage-page .sapMSlt .sapMSltLabel {
-    color: #1e293b !important;
+    /* color: #37353E !important; */
     font-weight: 600 !important;
     font-size: 0.9rem !important;
 }
 
 .usage-page .sapMSlt .sapMSltArrow {
-    color: #64748b !important;
+    /* color: #44444E !important; */
 }
 
 /* Filter Label Styling */
 .usage-page .sapMLabel {
-    color: #374151 !important;
+    /* color: #37353E !important; */
     font-weight: 600 !important;
     font-size: 0.9rem !important;
     margin-right: 0.8rem !important;
@@ -1912,9 +2011,9 @@
 /* Enhanced Table Styling */
 .usage-page .sapMScrollCont {
     border-radius: 12px !important;
-    border: 1px solid #e2e8f0 !important;
+    border: 1px solid #D3DAD9 !important;
     background: white !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 4px 20px rgba(55, 53, 62, 0.06) !important;
     margin: 1.5rem 0 !important;
     width: calc(100% - 3rem) !important;
     max-width: 100% !important;
@@ -1928,8 +2027,8 @@
 
 /* Professional Table Headers - Sticky */
 .usage-page .sapMTableTHead {
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
-    border-bottom: 2px solid #e2e8f0 !important;
+    background: linear-gradient(135deg, #D3DAD9 0%, #C8D1D0 100%) !important;
+    border-bottom: 2px solid #D3DAD9 !important;
     position: sticky !important;
     top: 0 !important;
     z-index: 100 !important;
@@ -1937,7 +2036,7 @@
 
 .usage-page .sapMTableTHead .sapMColumnHeader {
     background: transparent !important;
-    border-right: 1px solid #e2e8f0 !important;
+    border-right: 1px solid #D3DAD9 !important;
     padding: 1rem 0.75rem !important;
     position: sticky !important;
     top: 0 !important;
@@ -1945,7 +2044,7 @@
 }
 
 .usage-page .sapMTableTHead .sapMText {
-    color: #1e293b !important;
+    color: #37353E !important;
     font-weight: 700 !important;
     font-size: 0.9rem !important;
     text-transform: uppercase !important;
@@ -2155,4 +2254,42 @@
 
 .usage-page .sapMTableTBody .sapMListTblRow:first-child {
     border-top: none !important;
+}
+
+/* Prevent text wrapping in Usage table cells */
+.usage-page .sapMTableTBody .sapMText {
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    max-width: none !important;
+}
+
+.usage-page .sapMTableTBody .sapMListTblCell {
+    white-space: nowrap !important;
+    overflow: visible !important;
+    padding: 0.75rem 0.5rem !important;
+}
+
+/* Ensure table columns have proper width and no truncation */
+.usage-page .sapMTable .sapMTableTHead .sapMColumnHeader {
+    min-width: 100px !important;
+    max-width: none !important;
+    padding: 0.75rem 0.5rem !important;
+}
+
+.usage-page .sapMTable .sapMTableTBody .sapMListTblCell {
+    min-width: 100px !important;
+    max-width: none !important;
+    padding: 0.75rem 0.5rem !important;
+}
+
+/* Ensure horizontal scroll works properly */
+.usage-page .sapMScrollCont {
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+}
+
+.usage-page .sapMTable {
+    min-width: 1500px !important;
+    width: 100% !important;
 }

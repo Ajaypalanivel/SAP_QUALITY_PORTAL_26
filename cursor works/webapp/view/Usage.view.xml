@@ -29,23 +29,23 @@
                     </Select>
                 </Toolbar>
 
-                <!-- 📋 Table -->
+                <!-- 📋 Table with Horizontal Scroll -->
                 <ScrollContainer width="100%" height="500px" horizontal="true" vertical="true">
-                    <Table id="usageTable" inset="false" items="{/UsageData}">
+                    <Table id="usageTable" inset="false" items="{/UsageData}" width="100%">
                         <columns>
-                            <Column><Text text="Inspection Lot" /></Column>
-                            <Column><Text text="Lot Type" /></Column>
-                            <Column><Text text="Usage Catalog" /></Column>
-                            <Column><Text text="Plant" /></Column>
-                            <Column><Text text="Selected Set" /></Column>
-                            <Column><Text text="Code Group" /></Column>
-                            <Column><Text text="Decision Code" /></Column>
-                            <Column><Text text="Quality Score" /></Column>
-                            <Column><Text text="Decision By" /></Column>
-                            <Column><Text text="Decision Date" /></Column>
-                            <Column><Text text="Decision Time" /></Column>
-                            <Column><Text text="Follow Up" /></Column>
-                            <Column><Text text="Code Valuation" /></Column>
+                            <Column width="150px"><Text text="Inspection Lot" /></Column>
+                            <Column width="100px"><Text text="Lot Type" /></Column>
+                            <Column width="120px"><Text text="Usage Catalog" /></Column>
+                            <Column width="100px"><Text text="Plant" /></Column>
+                            <Column width="120px"><Text text="Selected Set" /></Column>
+                            <Column width="120px"><Text text="Code Group" /></Column>
+                            <Column width="120px"><Text text="Decision Code" /></Column>
+                            <Column width="120px"><Text text="Quality Score" /></Column>
+                            <Column width="120px"><Text text="Decision By" /></Column>
+                            <Column width="120px"><Text text="Decision Date" /></Column>
+                            <Column width="100px"><Text text="Decision Time" /></Column>
+                            <Column width="120px"><Text text="Follow Up" /></Column>
+                            <Column width="120px"><Text text="Code Valuation" /></Column>
                         </columns>
 
                         <items>

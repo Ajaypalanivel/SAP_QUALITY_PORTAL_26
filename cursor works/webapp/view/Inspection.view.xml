@@ -36,18 +36,18 @@
                     horizontal="true"
                     vertical="true">
 
-                    <Table id="inspectionTable" inset="false" items="{/InspectionData}">
+                    <Table id="inspectionTable" inset="false" items="{/InspectionData}" width="100%">
                         <columns>
-                            <Column><Text text="Inspection Lot" /></Column>
-                            <Column><Text text="Material" /></Column>
-                            <Column><Text text="Material Desc" /></Column>
-                            <Column><Text text="Plant" /></Column>
-                            <Column><Text text="Lot Quantity" /></Column>
-                            <Column><Text text="UoM" /></Column>
-                            <Column><Text text="Created On" /></Column>
-                            <Column><Text text="Start Date" /></Column>
-                            <Column><Text text="End Date" /></Column>
-                            <Column><Text text="Usage Decision" /></Column>
+                            <Column width="150px"><Text text="Inspection Lot" /></Column>
+                            <Column width="120px"><Text text="Material" /></Column>
+                            <Column width="150px"><Text text="Material Desc" /></Column>
+                            <Column width="100px"><Text text="Plant" /></Column>
+                            <Column width="120px"><Text text="Lot Quantity" /></Column>
+                            <Column width="80px"><Text text="UoM" /></Column>
+                            <Column width="120px"><Text text="Created On" /></Column>
+                            <Column width="120px"><Text text="Start Date" /></Column>
+                            <Column width="120px"><Text text="End Date" /></Column>
+                            <Column width="120px"><Text text="Usage Decision" /></Column>
                         </columns>
 
                         <items>

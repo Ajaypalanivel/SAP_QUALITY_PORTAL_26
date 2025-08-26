@@ -21,24 +21,20 @@
           
           <VBox class="login-form">
             <Label text="Username" class="input-label"/>
-            <HBox class="input-container">
-              <core:Icon src="sap-icon://employee" class="input-icon" />
-              <Input 
-                id="empId" 
-                placeholder="Enter your username" 
-                class="login-input"
-                type="Text"/>
-            </HBox>
+            <Input 
+              id="empId" 
+              placeholder="Enter your username" 
+              class="login-input"
+              type="Text"
+              autocomplete="off"/>
               
             <Label text="Password" class="input-label"/>
-            <HBox class="input-container">
-              <core:Icon src="sap-icon://private" class="input-icon" />
-              <Input 
-                id="password" 
-                placeholder="Enter your password" 
-                type="Password" 
-                class="login-input"/>
-            </HBox>
+            <Input 
+              id="password" 
+              placeholder="Enter your password" 
+              type="Password" 
+              class="login-input"
+              autocomplete="off"/>
             
             <Button 
               text="Sign In" 
